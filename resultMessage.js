@@ -16,3 +16,4 @@ class resultMsg {
     }
 }
 
+export default resultMsg
