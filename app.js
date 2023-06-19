@@ -59,6 +59,12 @@ function playRound(playerSelection, computerSelection) {
 function game() {
     let playerPoints = 0;
     let computerPoints = 0;
+
+    for (let i = 1; i < 6; i++) {
+        console.log(`Round ${i} begins!`)
+        playRound(playerSelection, computerSelection);
+    }
+
 }
 
 const playerSelection = "scissor";
@@ -67,4 +73,4 @@ const computerSelection = getComputerChoice();
 console.log(computerSelection);
 console.log(playerSelection);
 
-playRound(playerSelection, computerSelection);
+game();
