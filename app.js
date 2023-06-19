@@ -28,7 +28,7 @@ function playRound(playerSelection, computerSelection, playerPoints, computerPoi
                 playerPoints = playerWin(playerPoints)
                 console.log(resultMessage.win(playerSelection, computerSelection));
             } else if (computerSelection === "rock") {
-                console.log(`Both participants used ${playerSelection} - this round is a draw`)
+                console.log(resultMessage.draw(playerSelection));
             } else {
                 computerPoints = playerLoss(computerPoints)
                 console.log(resultMessage.lose(playerSelection, computerSelection));
@@ -38,24 +38,24 @@ function playRound(playerSelection, computerSelection, playerPoints, computerPoi
         case "paper":
             if (computerSelection === "rock") {
                 playerPoints = playerWin(playerPoints)
-                console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
+                console.log(resultMessage.win(playerSelection, computerSelection));
             } else if (computerSelection === "paper") {
-                console.log(`Both participants used ${playerSelection} - this round is a draw`)
+                console.log(resultMessage.draw(playerSelection));
             } else {
                 computerPoints = playerLoss(computerPoints)
-                console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
+                console.log(resultMessage.lose(playerSelection, computerSelection));
             }
             break;
 
         case "scissor":
             if (computerSelection === "paper") {
                 playerPoints = playerWin(playerPoints)
-                console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
+                console.log(resultMessage.win(playerSelection, computerSelection));
             } else if (computerSelection === "scissor") {
-                console.log(`Both participants used ${playerSelection} - this round is a draw`)
+                console.log(resultMessage.draw(playerSelection));
             } else {
                 computerPoints = playerLoss(computerPoints)
-                console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
+                console.log(resultMessage.lose(playerSelection, computerSelection));
             }
             break;
     }
@@ -71,7 +71,7 @@ function game() {
     for (let i = 1; i < 6; i++) {
         console.log(`Round ${i} begins!`)
 
-        const playerSelection = "rock";
+        const playerSelection = getComputerChoice();
         const computerSelection = getComputerChoice();
 
         const result = playRound(playerSelection, computerSelection, playerPoints, computerPoints);
