@@ -1,5 +1,5 @@
 import {resultMsg} from './resultMessage.js';
-const resultMessage = resultMsg;
+const resultMessage = new resultMsg();
 
 const choices = ["Rock", "Paper", "Scissor"];
 
