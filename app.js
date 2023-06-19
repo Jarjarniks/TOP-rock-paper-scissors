@@ -79,6 +79,8 @@ function game() {
 
     if (playerPoints > computerPoints) {
         console.log('You win!')
+    } else if (playerPoints === computerPoints) {
+        console.log('It is a tie!')
     } else {
         console.log('You lose.')
     }
