@@ -18,10 +18,20 @@ function playRound(playerSelection, computerSelection) {
             } else {
                 console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
             }
+            break;
+
+        case "paper":
+            if (computerSelection === "rock") {
+                console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
+            } else if (computerSelection === "paper") {
+                console.log(`Both participants used ${playerSelection} - this round is a draw`)
+            } else {
+                console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
+            }
     }
 }
 
-const playerSelection = "rock"
+const playerSelection = "paper"
 const computerSelection = getComputerChoice();
 
 console.log(computerSelection);
