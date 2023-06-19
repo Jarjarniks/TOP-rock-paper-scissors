@@ -5,6 +5,14 @@ function getComputerChoice() {
     return choices[number]
 }
 
+function playerWin() {
+    playerPoints += 1
+}
+
+function playerLoss() {
+    computerPoints += 1
+}
+
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerSelection.toLowerCase();
