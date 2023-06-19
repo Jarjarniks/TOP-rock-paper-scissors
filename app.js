@@ -26,12 +26,12 @@ function playRound(playerSelection, computerSelection, playerPoints, computerPoi
         case "rock":
             if (computerSelection === "scissor") {
                 playerPoints = playerWin(playerPoints)
-                console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
+                console.log(resultMessage.win(playerSelection, computerSelection));
             } else if (computerSelection === "rock") {
                 console.log(`Both participants used ${playerSelection} - this round is a draw`)
             } else {
                 computerPoints = playerLoss(computerPoints)
-                console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
+                console.log(resultMessage.lose(playerSelection, computerSelection));
             }
             break;
 
@@ -71,7 +71,7 @@ function game() {
     for (let i = 1; i < 6; i++) {
         console.log(`Round ${i} begins!`)
 
-        const playerSelection = getComputerChoice();
+        const playerSelection = "rock";
         const computerSelection = getComputerChoice();
 
         const result = playRound(playerSelection, computerSelection, playerPoints, computerPoints);
