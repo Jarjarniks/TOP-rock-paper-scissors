@@ -5,11 +5,11 @@ function getComputerChoice() {
     return choices[number]
 }
 
-function playerWin() {
+const playerWin = function(playerPoints) {
     playerPoints += 1
 }
 
-function playerLoss() {
+const playerLoss = function(computerPoints) {
     computerPoints += 1
 }
 
