@@ -1,6 +1,4 @@
 const choices = ["Rock", "Paper", "Scissor"];
-let playerPoints = 0;
-let computerPoints = 0;
 
 function getComputerChoice() {
     const number = Math.floor(Math.random() * choices.length);
@@ -42,6 +40,11 @@ function playRound(playerSelection, computerSelection) {
             }
             break;
     }
+}
+
+function game() {
+    let playerPoints = 0;
+    let computerPoints = 0;
 }
 
 const playerSelection = "scissor";
