@@ -19,8 +19,6 @@ function playRound(playerSelection, computerSelection, playerPoints, computerPoi
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerSelection.toLowerCase();
 
-    console.log(playerPoints, computerPoints);
-
     switch(playerSelection) {
         case "rock":
             if (computerSelection === "scissor") {
@@ -58,7 +56,7 @@ function playRound(playerSelection, computerSelection, playerPoints, computerPoi
             }
             break;
     }
-
+    console.log(playerPoints, computerPoints);
     return {playerPoints, computerPoints}
 
 }
@@ -73,7 +71,9 @@ function game() {
         const playerSelection = getComputerChoice();
         const computerSelection = getComputerChoice();
 
-        playRound(playerSelection, computerSelection, playerPoints, computerPoints);
+        const result = playRound(playerSelection, computerSelection, playerPoints, computerPoints);
+        playerPoints = result.playerPoints;
+        computerPoints = result.computerPoints;
     }
     console.log(`Out of 5 rounds, you got ${playerPoints} points!`)
 
