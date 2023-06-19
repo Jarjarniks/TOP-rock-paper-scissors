@@ -5,4 +5,8 @@ function getComputerChoice() {
     return choices[number]
 }
 
+function playRound(playerSelection, computerSelection) {
+    
+}
+
 console.log(getComputerChoice());
