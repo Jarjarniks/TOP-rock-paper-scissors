@@ -78,6 +78,7 @@ function game() {
         playerPoints = result.playerPoints;
         computerPoints = result.computerPoints;
     }
+    //////////////////// create function inside resultMessage object to handle this
     console.log(`Out of 5 rounds, you got ${playerPoints} points!`)
 
     if (playerPoints > computerPoints) {
@@ -87,6 +88,9 @@ function game() {
     } else {
         console.log('You lose.')
     }
+    /////////////////////
 }
 
 game();
+
+// add visual element to this project. Remove console.logs to show the result instead
