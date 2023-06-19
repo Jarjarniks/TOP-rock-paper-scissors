@@ -28,10 +28,21 @@ function playRound(playerSelection, computerSelection) {
             } else {
                 console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
             }
+            break;
+
+        case "scissor":
+            if (computerSelection === "paper") {
+                console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
+            } else if (computerSelection === "scissor") {
+                console.log(`Both participants used ${playerSelection} - this round is a draw`)
+            } else {
+                console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
+            }
+            break;
     }
 }
 
-const playerSelection = "paper"
+const playerSelection = "scissor"
 const computerSelection = getComputerChoice();
 
 console.log(computerSelection);
