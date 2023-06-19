@@ -4,15 +4,15 @@ class resultMsg {
         this.computerSelection = computerSelection
     }
 
-    win(playerSelection, computerSelection) {
+    win() {
         return `Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`
     }
     
-    draw(playerSelection) {
+    draw() {
         return `Both participants used ${playerSelection} - this round is a draw`
     }
 
-    lose(playerSelection, computerSelection) {
+    lose() {
         return `Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`
     }
 }
