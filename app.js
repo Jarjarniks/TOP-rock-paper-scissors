@@ -13,7 +13,7 @@ const playerLoss = function(computerPoints) {
     computerPoints += 1
 }
 
-function playRound(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection, playerPoints, computerPoints) {
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerSelection.toLowerCase();
 
@@ -62,16 +62,10 @@ function game() {
 
     for (let i = 1; i < 6; i++) {
         console.log(`Round ${i} begins!`)
-        
+        const playerSelection = getComputerChoice();
+        const computerSelection = getComputerChoice();
         playRound(playerSelection, computerSelection);
     }
-
 }
-
-const playerSelection = "scissor";
-const computerSelection = getComputerChoice();
-
-console.log(computerSelection);
-console.log(playerSelection);
 
 game();
