@@ -62,9 +62,18 @@ function game() {
 
     for (let i = 1; i < 6; i++) {
         console.log(`Round ${i} begins!`)
+
         const playerSelection = getComputerChoice();
         const computerSelection = getComputerChoice();
-        playRound(playerSelection, computerSelection);
+
+        playRound(playerSelection, computerSelection, playerPoints, computerPoints);
+    }
+    console.log(`Out of 5 rounds, you got ${playerPoints} points!`)
+
+    if (playerPoints > computerPoints) {
+        console.log('You win!')
+    } else {
+        console.log('You lose.')
     }
 }
 
