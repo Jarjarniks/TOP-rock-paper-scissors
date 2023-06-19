@@ -20,36 +20,36 @@ function playRound(playerSelection, computerSelection) {
     switch(playerSelection) {
         case "rock":
             if (computerSelection === "scissor") {
-                playerWin()
+                playerWin(playerPoints)
                 console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
             } else if (computerSelection === "rock") {
                 console.log(`Both participants used ${playerSelection} - this round is a draw`)
             } else {
-                playerLoss()
+                playerLoss(computerPoints)
                 console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
             }
             break;
 
         case "paper":
             if (computerSelection === "rock") {
-                playerWin()
+                playerWin(playerPoints)
                 console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
             } else if (computerSelection === "paper") {
                 console.log(`Both participants used ${playerSelection} - this round is a draw`)
             } else {
-                playerLoss()
+                playerLoss(computerPoints)
                 console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
             }
             break;
 
         case "scissor":
             if (computerSelection === "paper") {
-                playerWin()
+                playerWin(playerPoints)
                 console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
             } else if (computerSelection === "scissor") {
                 console.log(`Both participants used ${playerSelection} - this round is a draw`)
             } else {
-                playerLoss()
+                playerLoss(computerPoints)
                 console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
             }
             break;
@@ -62,6 +62,7 @@ function game() {
 
     for (let i = 1; i < 6; i++) {
         console.log(`Round ${i} begins!`)
+        
         playRound(playerSelection, computerSelection);
     }
 
