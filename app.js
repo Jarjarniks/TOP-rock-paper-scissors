@@ -1,3 +1,6 @@
+import {resultMsg} from './resultMessage.js';
+const resultMessage = resultMsg;
+
 const choices = ["Rock", "Paper", "Scissor"];
 
 function getComputerChoice() {
