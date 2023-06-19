@@ -7,53 +7,60 @@ function getComputerChoice() {
 
 const playerWin = function(playerPoints) {
     playerPoints += 1
+    return playerPoints
 }
 
 const playerLoss = function(computerPoints) {
     computerPoints += 1
+    return computerPoints
 }
 
 function playRound(playerSelection, computerSelection, playerPoints, computerPoints) {
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerSelection.toLowerCase();
 
+    console.log(playerPoints, computerPoints);
+
     switch(playerSelection) {
         case "rock":
             if (computerSelection === "scissor") {
-                playerWin(playerPoints)
+                playerPoints = playerWin(playerPoints)
                 console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
             } else if (computerSelection === "rock") {
                 console.log(`Both participants used ${playerSelection} - this round is a draw`)
             } else {
-                playerLoss(computerPoints)
+                computerPoints = playerLoss(computerPoints)
                 console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
             }
             break;
 
         case "paper":
             if (computerSelection === "rock") {
-                playerWin(playerPoints)
+                playerPoints = playerWin(playerPoints)
                 console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
             } else if (computerSelection === "paper") {
                 console.log(`Both participants used ${playerSelection} - this round is a draw`)
             } else {
-                playerLoss(computerPoints)
+                computerPoints = playerLoss(computerPoints)
                 console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
             }
             break;
 
         case "scissor":
             if (computerSelection === "paper") {
-                playerWin(playerPoints)
+                playerPoints = playerWin(playerPoints)
                 console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
             } else if (computerSelection === "scissor") {
                 console.log(`Both participants used ${playerSelection} - this round is a draw`)
             } else {
-                playerLoss(computerPoints)
+                computerPoints = playerLoss(computerPoints)
                 console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
             }
             break;
     }
+
+    return {playerPoints, computerPoints}
+
 }
 
 function game() {
