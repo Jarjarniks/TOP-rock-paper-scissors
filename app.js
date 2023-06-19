@@ -1,4 +1,4 @@
-import {resultMsg} from './resultMessage.js';
+import resultMsg from './resultMessage.js';
 const resultMessage = new resultMsg();
 
 const choices = ["Rock", "Paper", "Scissor"];
