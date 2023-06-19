@@ -20,30 +20,36 @@ function playRound(playerSelection, computerSelection) {
     switch(playerSelection) {
         case "rock":
             if (computerSelection === "scissor") {
+                playerWin()
                 console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
             } else if (computerSelection === "rock") {
                 console.log(`Both participants used ${playerSelection} - this round is a draw`)
             } else {
+                playerLoss()
                 console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
             }
             break;
 
         case "paper":
             if (computerSelection === "rock") {
+                playerWin()
                 console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
             } else if (computerSelection === "paper") {
                 console.log(`Both participants used ${playerSelection} - this round is a draw`)
             } else {
+                playerLoss()
                 console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
             }
             break;
 
         case "scissor":
             if (computerSelection === "paper") {
+                playerWin()
                 console.log(`Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`);
             } else if (computerSelection === "scissor") {
                 console.log(`Both participants used ${playerSelection} - this round is a draw`)
             } else {
+                playerLoss()
                 console.log(`Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`);
             }
             break;
