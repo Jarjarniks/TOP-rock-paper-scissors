@@ -2,7 +2,7 @@ import resultMsg from './resultMessage.js';
 import game from './game.js';
 
 const resultMessage = new resultMsg();
-const game = new game('RPS');
+const GAME = new game('RPS');
 
 const choices = ["Rock", "Paper", "Scissor"];
 
@@ -78,4 +78,5 @@ function playRound(event) {
     return {playerPoints, computerPoints};
 }
 
-const GAME = game.startGame();
+GAME.startGame();
+console.log(GAME)
