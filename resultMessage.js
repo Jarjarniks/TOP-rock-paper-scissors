@@ -3,15 +3,15 @@ class resultMsg {
         
     }
 
-    win(playerSelection, computerSelection) {
+    winMsg(playerSelection, computerSelection) {
         return `Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`
     }
     
-    draw(playerSelection) {
+    drawMsg(playerSelection) {
         return `Both participants used ${playerSelection} - this round is a draw`
     }
 
-    lose(playerSelection, computerSelection) {
+    loseMsg(playerSelection, computerSelection) {
         return `Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`
     }
 }
