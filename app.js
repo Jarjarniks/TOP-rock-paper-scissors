@@ -1,9 +1,6 @@
 import resultMsg from './resultMessage.js';
 import game from './game.js';
 
-const resultMessenger = new resultMsg();
-const GAME = new game('RPS');
-
 const choices = ["Rock", "Paper", "Scissor"];
 
 const rockBtn = document.querySelector('#rock');
@@ -44,42 +41,45 @@ function playRound(event) {
         case "rock":
             if (computerSelection === "scissor") {
                 playerPoints = playerWin(playerPoints);
-                 = ;
+                resultMessenger.updateRoundResult(resultMessenger.roundWinMsg(playerSelection, computerSelection));
             } else if (computerSelection === "rock") {
-                roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
+                /* roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection); */
             } else {
                 computerPoints = computerWin(computerPoints);
-                roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
+                /* roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection); */
             }
             break;
 
         case "paper":
             if (computerSelection === "rock") {
                 playerPoints = playerWin(playerPoints)
-                roundResultDiv.textContent = resultMessage.win(playerSelection, computerSelection);
+                resultMessenger.updateRoundResult(resultMessenger.roundWinMsg(playerSelection, computerSelection));
             } else if (computerSelection === "paper") {
-                roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
+                /* roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection); */
             } else {
                 computerPoints = computerWin(computerPoints)
-                roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
+                /* roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection); */
             }
             break;
 
         case "scissor":
             if (computerSelection === "paper") {
                 playerPoints = playerWin(playerPoints)
-                roundResultDiv.textContent = resultMessage.win(playerSelection, computerSelection);
+                resultMessenger.updateRoundResult(resultMessenger.roundWinMsg(playerSelection, computerSelection));
             } else if (computerSelection === "scissor") {
-                roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
+                /* roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection); */
             } else {
                 computerPoints = computerWin(computerPoints)
-                roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
+                /* roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection); */
             }
             break;
     }
     GAME.updatePoints({playerPoints, computerPoints});
     console.log(GAME)
 }
+
+const resultMessenger = new resultMsg(roundResultDiv, currentScoreDiv, endResultDiv);
+const GAME = new game('RPS');
 
 GAME.startGame();
 console.log(GAME)
