@@ -10,7 +10,7 @@ const rockBtn = document.querySelector('#rock');
 const paperBtn = document.querySelector('#paper');
 const scissorBtn = document.querySelector('#scissor');
 
-const resultsDiv = document.querySelector('#results');
+const resultsDiv = document.querySelector('#roundResult');
 
 rockBtn.addEventListener('click', playRound);
 paperBtn.addEventListener('click', playRound);
@@ -43,7 +43,6 @@ function playRound(event) {
             if (computerSelection === "scissor") {
                 playerPoints = playerWin(playerPoints);
                 resultsDiv.textContent = resultMessage.win(playerSelection, computerSelection);
-            
             } else if (computerSelection === "rock") {
                 resultsDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
             } else {
@@ -77,6 +76,7 @@ function playRound(event) {
             break;
     }
     GAME.updatePoints({playerPoints, computerPoints});
+    console.log(GAME)
 }
 
 GAME.startGame();
