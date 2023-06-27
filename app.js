@@ -81,11 +81,7 @@ function playRound(event) {
     if (GAME.roundsPlayed === 5) {
         GAME.disableButtons(rockBtn, paperBtn, scissorBtn)
 
-        if (GAME.playerPoints > GAME.computerPoints) {
-            resultMessenger.endResultWin(GAME)
-        } else {
-            resultMessenger.endResultLose(GAME)
-        }
+        GAME.endGame(resultMessenger);
     }
     console.log(GAME)
 }

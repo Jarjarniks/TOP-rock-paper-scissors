@@ -23,8 +23,12 @@ class game {
         })
     }
 
-    endGame() {
-        
+    endGame(resultMessenger) {
+        if (this.playerPoints > this.computerPoints) {
+            resultMessenger.endResultWin(this)
+        } else {
+            resultMessenger.endResultLose(this)
+        }
     }
 }
 
