@@ -1,6 +1,8 @@
 class resultMsg {
-    constructor() {
-        
+    constructor(roundResultDiv, currentScoreDiv, endResultDiv) {
+        this.roundResultDiv = roundResultDiv;
+        this.currentScoreDiv = currentScoreDiv;
+        this.endResultDiv = endResultDiv;
     }
 
     winMsg(playerSelection, computerSelection) {
