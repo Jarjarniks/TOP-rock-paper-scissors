@@ -70,9 +70,6 @@ function playRound(event) {
             }
             break;
     }
-    console.log(playerPoints, computerPoints);
-    return {playerPoints, computerPoints}
-
 }
 
 /* function game() {
