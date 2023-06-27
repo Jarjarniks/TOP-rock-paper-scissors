@@ -29,7 +29,7 @@ const playerLoss = function(computerPoints) {
 
 function playRound(event) {
     playerSelection = event.target.textContent.toLowerCase();
-    computerSelection = computerSelection.toLowerCase();
+    computerSelection = getComputerChoice().toLowerCase();
 
     switch(playerSelection) {
         case "rock":
