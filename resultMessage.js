@@ -31,7 +31,7 @@ class resultMsg {
         this.endResultDiv.textContent = `You won! You got ${GAME.playerPoints}. The computer got ${GAME.computerPoints}`;
     }
 
-    endResultLose() {
+    endResultLose(GAME) {
         this.currentScoreDiv.textContent = "";
         this.endResultDiv.textContent = `You lost! You got ${GAME.playerPoints}. The computer got ${GAME.computerPoints}. Try again!`;
     }
