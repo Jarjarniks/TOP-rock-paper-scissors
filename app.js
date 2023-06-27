@@ -22,7 +22,7 @@ const playerWin = function(playerPoints) {
     return playerPoints
 }
 
-const playerLoss = function(computerPoints) {
+const computerWin = function(computerPoints) {
     computerPoints += 1
     return computerPoints
 }
@@ -41,7 +41,7 @@ function playRound(event) {
             } else if (computerSelection === "rock") {
                 console.log(resultMessage.draw(playerSelection));
             } else {
-                computerPoints = playerLoss(computerPoints)
+                computerPoints = computerWin(computerPoints)
                 console.log(resultMessage.lose(playerSelection, computerSelection));
             }
             break;
@@ -53,7 +53,7 @@ function playRound(event) {
             } else if (computerSelection === "paper") {
                 console.log(resultMessage.draw(playerSelection));
             } else {
-                computerPoints = playerLoss(computerPoints)
+                computerPoints = computerWin(computerPoints)
                 console.log(resultMessage.lose(playerSelection, computerSelection));
             }
             break;
@@ -65,7 +65,7 @@ function playRound(event) {
             } else if (computerSelection === "scissor") {
                 console.log(resultMessage.draw(playerSelection));
             } else {
-                computerPoints = playerLoss(computerPoints)
+                computerPoints = computerWin(computerPoints)
                 console.log(resultMessage.lose(playerSelection, computerSelection));
             }
             break;
