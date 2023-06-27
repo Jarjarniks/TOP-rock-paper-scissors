@@ -22,7 +22,9 @@ class game {
     }
 
     disableButtons(...buttonElements) {
-        
+        buttonElements.forEach(button => {
+            button.disabled = true;
+        })
     }
 
     endGame() {
