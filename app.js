@@ -1,5 +1,8 @@
 import resultMsg from './resultMessage.js';
+import game from './game.js';
+
 const resultMessage = new resultMsg();
+const game = new game('RPS');
 
 const choices = ["Rock", "Paper", "Scissor"];
 
@@ -79,7 +82,7 @@ function game() {
     let playerPoints = 0;
     let computerPoints = 0;
 
-    
+
 
     playerPoints = result.playerPoints;
     computerPoints = result.computerPoints;
