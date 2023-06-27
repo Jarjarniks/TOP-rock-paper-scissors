@@ -17,8 +17,8 @@ class resultMsg {
         return `Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`
     }
 
-    updateRoundResult() {
-        this.roundResultDiv.textContent = 
+    updateRoundResult(roundWinMsg) {
+        this.roundResultDiv.textContent = roundWinMsg
     }
 }
 
