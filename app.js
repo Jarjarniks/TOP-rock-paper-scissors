@@ -40,13 +40,11 @@ function playRound(event) {
             if (computerSelection === "scissor") {
                 playerPoints = playerWin(playerPoints);
                 resultsDiv.textContent = resultMessage.win(playerSelection, computerSelection);
-                return playerPoints
             } else if (computerSelection === "rock") {
                 resultsDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
             } else {
                 computerPoints = computerWin(computerPoints);
                 resultsDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
-                return computerPoints
             }
             break;
 
@@ -74,11 +72,14 @@ function playRound(event) {
             }
             break;
     }
+    return {playerPoints, computerPoints};
 }
 
 function game() {
     let playerPoints = 0;
     let computerPoints = 0;
+
+
 
     playerPoints = result.playerPoints;
     computerPoints = result.computerPoints;
