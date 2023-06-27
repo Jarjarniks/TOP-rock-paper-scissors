@@ -77,25 +77,3 @@ function playRound(event) {
     }
     return {playerPoints, computerPoints};
 }
-
-function game() {
-    let playerPoints = 0;
-    let computerPoints = 0;
-
-
-
-    playerPoints = result.playerPoints;
-    computerPoints = result.computerPoints;
-    
-    //////////////////// create function inside resultMessage object to handle this
-    console.log(`Out of 5 rounds, you got ${playerPoints} points!`)
-
-    if (playerPoints > computerPoints) {
-        console.log('You win!')
-    } else if (playerPoints === computerPoints) {
-        console.log('It is a tie!')
-    } else {
-        console.log('You lose.')
-    }
-    /////////////////////
-}
