@@ -39,36 +39,36 @@ function playRound(event) {
         case "rock":
             if (computerSelection === "scissor") {
                 playerPoints = playerWin(playerPoints)
-                console.log(resultMessage.win(playerSelection, computerSelection));
+                resultsDiv.textContent = resultMessage.win(playerSelection, computerSelection);
             } else if (computerSelection === "rock") {
-                console.log(resultMessage.draw(playerSelection));
+                resultsDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
             } else {
                 computerPoints = computerWin(computerPoints)
-                console.log(resultMessage.lose(playerSelection, computerSelection));
+                resultsDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
             }
             break;
 
         case "paper":
             if (computerSelection === "rock") {
                 playerPoints = playerWin(playerPoints)
-                console.log(resultMessage.win(playerSelection, computerSelection));
+                resultsDiv.textContent = resultMessage.win(playerSelection, computerSelection);
             } else if (computerSelection === "paper") {
-                console.log(resultMessage.draw(playerSelection));
+                resultsDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
             } else {
                 computerPoints = computerWin(computerPoints)
-                console.log(resultMessage.lose(playerSelection, computerSelection));
+                resultsDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
             }
             break;
 
         case "scissor":
             if (computerSelection === "paper") {
                 playerPoints = playerWin(playerPoints)
-                console.log(resultMessage.win(playerSelection, computerSelection));
+                resultsDiv.textContent = resultMessage.win(playerSelection, computerSelection);
             } else if (computerSelection === "scissor") {
-                console.log(resultMessage.draw(playerSelection));
+                resultsDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
             } else {
                 computerPoints = computerWin(computerPoints)
-                console.log(resultMessage.lose(playerSelection, computerSelection));
+                resultsDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
             }
             break;
     }
