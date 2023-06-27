@@ -38,13 +38,15 @@ function playRound(event) {
     switch(playerSelection) {
         case "rock":
             if (computerSelection === "scissor") {
-                playerPoints = playerWin(playerPoints)
+                playerPoints = playerWin(playerPoints);
                 resultsDiv.textContent = resultMessage.win(playerSelection, computerSelection);
+                return playerPoints
             } else if (computerSelection === "rock") {
                 resultsDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
             } else {
-                computerPoints = computerWin(computerPoints)
+                computerPoints = computerWin(computerPoints);
                 resultsDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
+                return computerPoints
             }
             break;
 
