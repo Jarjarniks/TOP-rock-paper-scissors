@@ -27,8 +27,8 @@ class game {
     }
 
     updatePoints(resultObj) {
-        playerPoints += result.playerPoints;
-        computerPoints += result.computerPoints;
+        playerPoints += resultObj.playerPoints;
+        computerPoints += resultObj.computerPoints;
     }
 }
 
