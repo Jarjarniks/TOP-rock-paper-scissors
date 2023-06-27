@@ -1,7 +1,7 @@
 import resultMsg from './resultMessage.js';
 import game from './game.js';
 
-const resultMessage = new resultMsg();
+const resultMessager = new resultMsg();
 const GAME = new game('RPS');
 
 const choices = ["Rock", "Paper", "Scissor"];
