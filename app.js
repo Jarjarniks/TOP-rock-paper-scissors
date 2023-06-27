@@ -74,8 +74,15 @@ function playRound(event) {
             }
             break;
     }
+
     GAME.updatePoints({playerPoints, computerPoints});
     resultMessenger.updateCurrentScore(GAME);
+
+    if (GAME.roundsPlayed === 5) {
+        
+
+        
+    }
     console.log(GAME)
 }
 
