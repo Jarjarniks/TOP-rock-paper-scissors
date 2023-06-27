@@ -28,7 +28,7 @@ const playerLoss = function(computerPoints) {
 }
 
 function playRound(event) {
-    playerSelection = playerSelection.toLowerCase();
+    playerSelection = event.target.textContent.toLowerCase();
     computerSelection = computerSelection.toLowerCase();
 
     switch(playerSelection) {
