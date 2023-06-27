@@ -4,4 +4,7 @@ class game {
         this.playerPoints = 0;
         this.computerPoints = 0;
     }
+
 }
+
+export default game
