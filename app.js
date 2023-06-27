@@ -79,7 +79,7 @@ function game() {
     let playerPoints = 0;
     let computerPoints = 0;
 
-
+    
 
     playerPoints = result.playerPoints;
     computerPoints = result.computerPoints;
