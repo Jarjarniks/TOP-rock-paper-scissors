@@ -5,16 +5,20 @@ class resultMsg {
         this.endResultDiv = endResultDiv;
     }
 
-    winMsg(playerSelection, computerSelection) {
+    roundWinMsg(playerSelection, computerSelection) {
         return `Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`
     }
     
-    drawMsg(playerSelection) {
+    roundTieMsg(playerSelection) {
         return `Both participants used ${playerSelection} - this round is a draw`
     }
 
-    loseMsg(playerSelection, computerSelection) {
+    roundLoseMsg(playerSelection, computerSelection) {
         return `Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`
+    }
+
+    updateRoundResult() {
+        this.roundResultDiv.textContent = 
     }
 }
 
