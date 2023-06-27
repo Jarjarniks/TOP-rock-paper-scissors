@@ -3,6 +3,11 @@ const resultMessage = new resultMsg();
 
 const choices = ["Rock", "Paper", "Scissor"];
 
+const rockBtn = document.querySelector('#rock');
+const paperBtn = document.querySelector('#paper');
+const scissorBtn = document.querySelector('#scissor');
+
+
 function getComputerChoice() {
     const number = Math.floor(Math.random() * choices.length);
     return choices[number]
