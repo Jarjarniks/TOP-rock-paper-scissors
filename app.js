@@ -79,6 +79,8 @@ function playRound(event) {
     resultMessenger.updateCurrentScore(GAME);
 
     if (GAME.roundsPlayed === 5) {
+        GAME.disableButtons(rockBtn, paperBtn, scissorBtn)
+
         if (GAME.playerPoints > GAME.computerPoints) {
             resultMessenger.endResultWin(GAME)
         } else {
