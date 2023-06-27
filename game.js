@@ -21,20 +21,12 @@ class game {
         this.computerPoints += resultObj.computerPoints;
     }
 
+    disableButtons(...buttonElements) {
+        
+    }
+
     endGame() {
-
-
-        /* //////////////////// create function inside resultMessage object to handle this
-        console.log(`Out of 5 rounds, you got ${playerPoints} points!`)
-    
-        if (playerPoints > computerPoints) {
-            console.log('You win!')
-        } else if (playerPoints === computerPoints) {
-            console.log('It is a tie!')
-        } else {
-            console.log('You lose.')
-        }
-        ///////////////////// */
+        
     }
 }
 
