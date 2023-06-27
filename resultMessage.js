@@ -17,8 +17,8 @@ class resultMsg {
         return `Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`
     }
 
-    updateRoundResult(roundWinMsg) {
-        this.roundResultDiv.textContent = roundWinMsg
+    updateRoundResult(msg) {
+        this.roundResultDiv.textContent = msg
     }
 
     updateCurrentScore(playerPoints, computerPoints) {
