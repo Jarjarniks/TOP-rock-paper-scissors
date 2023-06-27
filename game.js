@@ -1,14 +1,14 @@
 class game {
     constructor(gameType) {
         this.gameType = gameType
-        this.playerPoints = 0;
-        this.computerPoints = 0;
+        this.playerPoints;
+        this.computerPoints;
     }
 
     startGame() {
-        let playerPoints = 0;
-        let computerPoints = 0;
-    
+        this.playerPoints = 0;
+        this.computerPoints = 0;
+        
     
     
        /*  playerPoints = result.playerPoints;
