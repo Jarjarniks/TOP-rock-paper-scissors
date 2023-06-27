@@ -27,7 +27,7 @@ const playerLoss = function(computerPoints) {
     return computerPoints
 }
 
-function playRound(playerSelection, computerSelection, playerPoints, computerPoints) {
+function playRound(event) {
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerSelection.toLowerCase();
 
