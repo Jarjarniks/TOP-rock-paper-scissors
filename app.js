@@ -68,16 +68,12 @@ function game() {
     let playerPoints = 0;
     let computerPoints = 0;
 
-    for (let i = 1; i < 6; i++) {
-        console.log(`Round ${i} begins!`)
-
-        const playerSelection = getComputerChoice();
-        const computerSelection = getComputerChoice();
-
-        const result = playRound(playerSelection, computerSelection, playerPoints, computerPoints);
-        playerPoints = result.playerPoints;
-        computerPoints = result.computerPoints;
-    }
+    const playerSelection = getComputerChoice();
+    const computerSelection = getComputerChoice();
+    const result = playRound(playerSelection, computerSelection, playerPoints, computerPoints);
+    playerPoints = result.playerPoints;
+    computerPoints = result.computerPoints;
+    
     //////////////////// create function inside resultMessage object to handle this
     console.log(`Out of 5 rounds, you got ${playerPoints} points!`)
 
