@@ -11,8 +11,7 @@ class game {
         
     
     
-       /*  playerPoints = result.playerPoints;
-        computerPoints = result.computerPoints; */
+       
         
         /* //////////////////// create function inside resultMessage object to handle this
         console.log(`Out of 5 rounds, you got ${playerPoints} points!`)
@@ -25,6 +24,11 @@ class game {
             console.log('You lose.')
         }
         ///////////////////// */
+    }
+
+    updatePoints(resultObj) {
+        playerPoints += result.playerPoints;
+        computerPoints += result.computerPoints;
     }
 }
 
