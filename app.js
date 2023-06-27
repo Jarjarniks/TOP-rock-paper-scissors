@@ -7,6 +7,10 @@ const rockBtn = document.querySelector('#rock');
 const paperBtn = document.querySelector('#paper');
 const scissorBtn = document.querySelector('#scissor');
 
+rockBtn.addEventListener('click', playRound);
+paperBtn.addEventListener('click', playRound);
+scissorBtn.addEventListener('click', playRound);
+
 
 function getComputerChoice() {
     const number = Math.floor(Math.random() * choices.length);
