@@ -13,10 +13,6 @@ class game {
 
     updatePoints(resultObj) {
         this.roundsPlayed += 1;
-        if (this.roundsPlayed === 5) {
-            this.endGame();
-        }
-
         this.playerPoints += resultObj.playerPoints;
         this.computerPoints += resultObj.computerPoints;
     }
