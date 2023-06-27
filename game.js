@@ -28,7 +28,7 @@ class game {
     }
 
     endGame() {
-        
+        this.disableButtons(...buttonElements)
     }
 }
 
