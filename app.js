@@ -82,6 +82,8 @@ function playRound(event) {
         GAME.disableButtons(rockBtn, paperBtn, scissorBtn)
 
         GAME.endGame(resultMessenger);
+
+        //make endGame add a button to restart
     }
     console.log(GAME)
 }
