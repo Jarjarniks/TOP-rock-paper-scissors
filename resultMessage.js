@@ -25,6 +25,18 @@ class resultMsg {
         this.currentScoreDiv.textContent = `The score is:
         Player points: ${GAME.playerPoints}. Computer points: ${GAME.computerPoints}`
     }
+
+    endResultWin() {
+        this.endResultDiv.textContent = 
+    }
+
+    endResultTie() {
+
+    }
+
+    endResutLose() {
+        
+    }
 }
 
 export default resultMsg
