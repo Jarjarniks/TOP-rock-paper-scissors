@@ -95,7 +95,3 @@ function game() {
     }
     /////////////////////
 }
-
-
-
-// add visual element to this project. Remove console.logs to show the result instead
