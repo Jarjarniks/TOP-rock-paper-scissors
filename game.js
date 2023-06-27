@@ -3,6 +3,7 @@ class game {
         this.gameType = gameType
         this.playerPoints;
         this.computerPoints;
+        this.roundsPlayed = 0;
     }
 
     startGame() {
@@ -11,6 +12,8 @@ class game {
     }
 
     updatePoints(resultObj) {
+        
+
         this.playerPoints += resultObj.playerPoints;
         this.computerPoints += resultObj.computerPoints;
     }
