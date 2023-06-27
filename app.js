@@ -77,3 +77,5 @@ function playRound(event) {
     }
     return {playerPoints, computerPoints};
 }
+
+const GAME = game.startGame();

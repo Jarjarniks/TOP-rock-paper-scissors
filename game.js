@@ -5,7 +5,7 @@ class game {
         this.computerPoints = 0;
     }
 
-    game() {
+    startGame() {
         let playerPoints = 0;
         let computerPoints = 0;
     
