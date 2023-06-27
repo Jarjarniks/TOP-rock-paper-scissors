@@ -74,7 +74,7 @@ function playRound(event) {
     }
 }
 
-/* function game() {
+function game() {
     let playerPoints = 0;
     let computerPoints = 0;
 
@@ -95,4 +95,4 @@ function playRound(event) {
         console.log('You lose.')
     }
     /////////////////////
-} */
+}
