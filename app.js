@@ -28,7 +28,7 @@ const computerWin = function(computerPoints) {
 }
 
 function playRound(event) {
-    const playerSelection = event.target.textContent.toLowerCase();
+    const playerSelection = event.target.textContent.trim('').toLowerCase();
     const computerSelection = getComputerChoice().toLowerCase();
     let playerPoints = 0;
     let computerPoints = 0;
