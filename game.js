@@ -11,10 +11,10 @@ class game {
     
     
     
-        playerPoints = result.playerPoints;
-        computerPoints = result.computerPoints;
+       /*  playerPoints = result.playerPoints;
+        computerPoints = result.computerPoints; */
         
-        //////////////////// create function inside resultMessage object to handle this
+        /* //////////////////// create function inside resultMessage object to handle this
         console.log(`Out of 5 rounds, you got ${playerPoints} points!`)
     
         if (playerPoints > computerPoints) {
@@ -24,7 +24,7 @@ class game {
         } else {
             console.log('You lose.')
         }
-        /////////////////////
+        ///////////////////// */
     }
 }
 
