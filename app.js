@@ -79,9 +79,11 @@ function playRound(event) {
     resultMessenger.updateCurrentScore(GAME);
 
     if (GAME.roundsPlayed === 5) {
-        
-
-        
+        if (GAME.playerPoints > GAME.computerPoints) {
+            resultMessenger.endResultWin(GAME)
+        } else {
+            resultMessenger.endResultLose(GAME)
+        }
     }
     console.log(GAME)
 }
