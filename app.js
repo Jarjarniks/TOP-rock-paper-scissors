@@ -1,7 +1,7 @@
 import resultMsg from './resultMessage.js';
 import game from './game.js';
 
-const resultMessager = new resultMsg();
+const resultMessenger = new resultMsg();
 const GAME = new game('RPS');
 
 const choices = ["Rock", "Paper", "Scissor"];
@@ -44,7 +44,7 @@ function playRound(event) {
         case "rock":
             if (computerSelection === "scissor") {
                 playerPoints = playerWin(playerPoints);
-                roundResultDiv.textContent = resultMessage.win(playerSelection, computerSelection);
+                 = ;
             } else if (computerSelection === "rock") {
                 roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
             } else {
