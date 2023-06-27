@@ -21,8 +21,9 @@ class resultMsg {
         this.roundResultDiv.textContent = msg
     }
 
-    updateCurrentScore(playerPoints, computerPoints) {
-        this.currentScoreDiv.textContent = `The score is`
+    updateCurrentScore(GAME) {
+        this.currentScoreDiv.textContent = `The score is:
+        Player points: ${GAME.playerPoints}. Computer points: ${GAME.computerPoints}`
     }
 }
 

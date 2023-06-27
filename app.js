@@ -75,6 +75,7 @@ function playRound(event) {
             break;
     }
     GAME.updatePoints({playerPoints, computerPoints});
+    resultMessenger.updateCurrentScore(GAME);
     console.log(GAME)
 }
 
