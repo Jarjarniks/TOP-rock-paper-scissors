@@ -80,9 +80,6 @@ function game() {
     let playerPoints = 0;
     let computerPoints = 0;
 
-    const playerSelection = getComputerChoice();
-    const computerSelection = getComputerChoice();
-    const result = playRound(playerSelection, computerSelection, playerPoints, computerPoints);
     playerPoints = result.playerPoints;
     computerPoints = result.computerPoints;
     
