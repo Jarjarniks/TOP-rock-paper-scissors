@@ -20,6 +20,10 @@ class resultMsg {
     updateRoundResult(roundWinMsg) {
         this.roundResultDiv.textContent = roundWinMsg
     }
+
+    updateCurrentScore(playerPoints, computerPoints) {
+        this.currentScoreDiv.textContent = `The score is`
+    }
 }
 
 export default resultMsg

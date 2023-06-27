@@ -43,10 +43,10 @@ function playRound(event) {
                 playerPoints = playerWin(playerPoints);
                 resultMessenger.updateRoundResult(resultMessenger.roundWinMsg(playerSelection, computerSelection));
             } else if (computerSelection === "rock") {
-                /* roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection); */
+                resultMessenger.updateRoundResult(resultMessenger.roundTieMsg(playerSelection, computerSelection));
             } else {
                 computerPoints = computerWin(computerPoints);
-                /* roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection); */
+                resultMessenger.updateRoundResult(resultMessenger.roundLoseMsg(playerSelection, computerSelection));
             }
             break;
 
@@ -55,10 +55,10 @@ function playRound(event) {
                 playerPoints = playerWin(playerPoints)
                 resultMessenger.updateRoundResult(resultMessenger.roundWinMsg(playerSelection, computerSelection));
             } else if (computerSelection === "paper") {
-                /* roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection); */
+                resultMessenger.updateRoundResult(resultMessenger.roundTieMsg(playerSelection, computerSelection));
             } else {
                 computerPoints = computerWin(computerPoints)
-                /* roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection); */
+                resultMessenger.updateRoundResult(resultMessenger.roundLoseMsg(playerSelection, computerSelection));
             }
             break;
 
@@ -67,10 +67,10 @@ function playRound(event) {
                 playerPoints = playerWin(playerPoints)
                 resultMessenger.updateRoundResult(resultMessenger.roundWinMsg(playerSelection, computerSelection));
             } else if (computerSelection === "scissor") {
-                /* roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection); */
+                resultMessenger.updateRoundResult(resultMessenger.roundTieMsg(playerSelection, computerSelection));
             } else {
                 computerPoints = computerWin(computerPoints)
-                /* roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection); */
+                resultMessenger.updateRoundResult(resultMessenger.roundLoseMsg(playerSelection, computerSelection));
             }
             break;
     }
