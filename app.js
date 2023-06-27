@@ -10,7 +10,9 @@ const rockBtn = document.querySelector('#rock');
 const paperBtn = document.querySelector('#paper');
 const scissorBtn = document.querySelector('#scissor');
 
-const resultsDiv = document.querySelector('#roundResult');
+const roundResultDiv = document.querySelector('#roundResult');
+const currentScoreDiv = document.querySelector('#currentScore');
+const endResultDiv = document.querySelector('#endResult');
 
 rockBtn.addEventListener('click', playRound);
 paperBtn.addEventListener('click', playRound);
@@ -42,36 +44,36 @@ function playRound(event) {
         case "rock":
             if (computerSelection === "scissor") {
                 playerPoints = playerWin(playerPoints);
-                resultsDiv.textContent = resultMessage.win(playerSelection, computerSelection);
+                roundResultDiv.textContent = resultMessage.win(playerSelection, computerSelection);
             } else if (computerSelection === "rock") {
-                resultsDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
+                roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
             } else {
                 computerPoints = computerWin(computerPoints);
-                resultsDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
+                roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
             }
             break;
 
         case "paper":
             if (computerSelection === "rock") {
                 playerPoints = playerWin(playerPoints)
-                resultsDiv.textContent = resultMessage.win(playerSelection, computerSelection);
+                roundResultDiv.textContent = resultMessage.win(playerSelection, computerSelection);
             } else if (computerSelection === "paper") {
-                resultsDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
+                roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
             } else {
                 computerPoints = computerWin(computerPoints)
-                resultsDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
+                roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
             }
             break;
 
         case "scissor":
             if (computerSelection === "paper") {
                 playerPoints = playerWin(playerPoints)
-                resultsDiv.textContent = resultMessage.win(playerSelection, computerSelection);
+                roundResultDiv.textContent = resultMessage.win(playerSelection, computerSelection);
             } else if (computerSelection === "scissor") {
-                resultsDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
+                roundResultDiv.textContent = resultMessage.draw(playerSelection, computerSelection);
             } else {
                 computerPoints = computerWin(computerPoints)
-                resultsDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
+                roundResultDiv.textContent = resultMessage.lose(playerSelection, computerSelection);
             }
             break;
     }
