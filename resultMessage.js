@@ -27,6 +27,11 @@ class resultMsg {
         this.currentScoreDiv.textContent = "";
         this.endResultDiv.textContent = message
     }
+
+    startGameReset() {
+        this.roundResultDiv.textContent = ""
+        this.endResultDiv.textContent = ""
+    }
 }
 
 export default resultMsg
