@@ -5,8 +5,19 @@ class resultMsg {
         this.endResultDiv = endResultDiv;
     }
 
-    roundResultMsg(playerSelection, computerSelection, message) {
-        return `Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`;
+    roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints) {
+        let message;
+        
+        if (playerPoints > computerPoints) {
+            message = `Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`
+        } else if (playerPoints === computerPoints) {
+            message = `It's a tie! player chose ${playerSelection}, computer chose ${computerSelection}`
+        } else {
+            message = `Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`
+        }
+
+        this.roundResultDiv = message
+        //return `Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`;
     }
 
     updateCurrentScore(GAME) {
