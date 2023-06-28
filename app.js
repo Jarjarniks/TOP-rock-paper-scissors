@@ -91,6 +91,6 @@ function playRound(event) {
 
 const resultMessenger = new resultMsg(context);
 const GAME = new game('RPS', resultMessenger);
-
-GAME.startGame();
 console.log(GAME)
+console.log(resultMessenger)
+GAME.startGame();
