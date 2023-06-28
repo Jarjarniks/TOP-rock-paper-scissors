@@ -32,6 +32,12 @@ class resultMsg {
         this.endResultDiv.textContent = `You won! You got ${GAME.playerPoints} points. The computer got ${GAME.computerPoints} points`;
     }
 
+    endResultTie(GAME) {
+        this.roundResultDiv.textContent = ""
+        this.currentScoreDiv.textContent = "";
+        this.endResultDiv.textContent = `It's a tie! You got ${GAME.playerPoints} points. The computer got ${GAME.computerPoints} points. Time for a rematch?`;
+    }
+
     endResultLose(GAME) {
         this.roundResultDiv.textContent = ""
         this.currentScoreDiv.textContent = "";
