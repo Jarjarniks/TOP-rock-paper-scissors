@@ -15,9 +15,7 @@ class resultMsg {
         } else {
             message = `Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`
         }
-
         this.roundResultDiv.textContent = message
-        //return `Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`;
     }
 
     updateCurrentScore(GAME) {
