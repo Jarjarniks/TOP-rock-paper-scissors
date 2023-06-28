@@ -21,9 +21,17 @@ class resultMsg {
         Player points: ${GAME.playerPoints}. Computer points: ${GAME.computerPoints}`;
     }
 
-    endResultMsg(GAME, message) {
+    endResultMsg(playerPoints, computerPoints) {
+        let message;
+        if (playerPoints > computerPoints) {
+            message = `You won! You got ${playerPoints} points. The computer got ${computerPoints} points`;
+        } else if (playerPoints === computerPoints) {
+            message = `It's a tie! You got ${playerPoints} points. The computer got ${computerPoints} points. Time for a rematch?`;
+        } else {
+            message = `You lost! You got ${playerPoints} points. The computer got ${computerPoints} points`;
+        }
         this.context.currentScoreDiv.textContent = "";
-        this.context.endResultDiv.textContent = message
+        this.context.endResultDiv.textContent = message;
     }
 
     startGameReset() {
