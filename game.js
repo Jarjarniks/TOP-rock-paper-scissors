@@ -13,10 +13,11 @@ class game {
         this.computerPoints = 0;
 
         if (this.startGameBtn) {
-            console.log('i fired')
             const main = document.querySelector('main');
             main.removeChild(this.startGameBtn)
         }
+
+        this.resultMessenger.startGameReset()
     }
 
     updatePoints(resultObj) {
