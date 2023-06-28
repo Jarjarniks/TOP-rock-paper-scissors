@@ -4,11 +4,18 @@ class game {
         this.playerPoints;
         this.computerPoints;
         this.roundsPlayed = 0;
+        this.startGameBtn;
     }
 
     startGame() {
         this.playerPoints = 0;
         this.computerPoints = 0;
+
+        if (this.startGameBtn) {
+            console.log('i fired')
+            const main = document.querySelector('main');
+            main.removeChild(this.startGameBtn)
+        }
     }
 
     updatePoints(resultObj) {
@@ -27,10 +34,12 @@ class game {
         const btn = document.createElement('button');
         btn.textContent = 'Play again'
         btn.id = 'startGame'
-        btn.addEventListener('click', this.startGame);
+        btn.addEventListener('click', this.startGame.bind(this));
         
         const main = document.querySelector('main');
         main.appendChild(btn);
+
+        this.startGameBtn = btn
     }
 
     endGame(resultMessenger) {
