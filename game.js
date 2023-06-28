@@ -45,6 +45,8 @@ class game {
             message = `You lost! You got ${this.playerPoints} points. The computer got ${this.computerPoints} points`;
             resultMessenger.endResultMsg(this, message)
         }
+
+        this.createResetGameBtn();
     }
 }
 
