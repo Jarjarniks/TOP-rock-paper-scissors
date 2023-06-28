@@ -12,6 +12,7 @@ class game {
     startGame() {
         this.playerPoints = 0;
         this.computerPoints = 0;
+        this.roundsPlayed = 0;
 
         if (this.startGameBtn) {
             const main = document.querySelector('main');
@@ -19,6 +20,9 @@ class game {
         }
 
         this.resultMessenger.startGameReset()
+        this.context.rockBtn.disabled = false
+        this.context.paperBtn.disabled = false
+        this.context.scissorBtn.disabled = false
     }
 
     updatePoints(resultObj) {
