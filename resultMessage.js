@@ -26,8 +26,8 @@ class resultMsg {
     }
 
     endResultMsg(GAME, message) {
-        GAME.currentScoreDiv.textContent = "";
-        GAME.endResultDiv.textContent = message
+        this.currentScoreDiv.textContent = "";
+        this.endResultDiv.textContent = message
     }
 }
 
