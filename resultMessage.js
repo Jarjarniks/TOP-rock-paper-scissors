@@ -9,10 +9,6 @@ class resultMsg {
         return `Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`;
     }
 
-    updateRoundResult(msg) {
-        this.roundResultDiv.textContent = msg;
-    }
-
     updateCurrentScore(GAME) {
         this.currentScoreDiv.textContent = `The score is:
         Player points: ${GAME.playerPoints}. Computer points: ${GAME.computerPoints}`;
