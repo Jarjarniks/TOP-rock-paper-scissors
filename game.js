@@ -23,6 +23,14 @@ class game {
         })
     }
 
+    createResetGameBtn() {
+        const btn = document.createElement('button');
+        btn.textContent = 'Play again'
+        btn.id = 'resetGame'
+        btn.addEventListener('click', this.startGame);
+        
+    }
+
     endGame(resultMessenger) {
         let message;
         if (this.playerPoints > this.computerPoints) {
