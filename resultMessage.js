@@ -13,22 +13,22 @@ class resultMsg {
         } else {
             message = `Player loses! player chose ${playerSelection}, computer chose ${computerSelection}`
         }
-        this.roundResultDiv.textContent = message
+        this.context.roundResultDiv.textContent = message
     }
 
     updateCurrentScore(GAME) {
-        this.currentScoreDiv.textContent = `The score is:
+        this.context.currentScoreDiv.textContent = `The score is:
         Player points: ${GAME.playerPoints}. Computer points: ${GAME.computerPoints}`;
     }
 
     endResultMsg(GAME, message) {
-        this.currentScoreDiv.textContent = "";
-        this.endResultDiv.textContent = message
+        this.context.currentScoreDiv.textContent = "";
+        this.context.endResultDiv.textContent = message
     }
 
     startGameReset() {
-        this.roundResultDiv.textContent = ""
-        this.endResultDiv.textContent = ""
+        this.context.roundResultDiv.textContent = ""
+        this.context.endResultDiv.textContent = ""
     }
 }
 
