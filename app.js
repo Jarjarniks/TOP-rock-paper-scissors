@@ -89,7 +89,7 @@ function playRound(event) {
 }
 
 const resultMessenger = new resultMsg(roundResultDiv, currentScoreDiv, endResultDiv);
-const GAME = new game('RPS');
+const GAME = new game('RPS', resultMessenger);
 
 GAME.startGame();
 console.log(GAME)
