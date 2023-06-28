@@ -80,7 +80,7 @@ function playRound(event) {
     resultMessenger.updateCurrentScore(GAME);
 
     if (GAME.roundsPlayed === 5) {
-        GAME.disableButtons(rockBtn, paperBtn, scissorBtn)
+        GAME.disableButtons(context.rockBtn, context.paperBtn, context.scissorBtn)
 
         GAME.endGame(resultMessenger);
 
