@@ -26,22 +26,10 @@ class resultMsg {
         Player points: ${GAME.playerPoints}. Computer points: ${GAME.computerPoints}`;
     }
 
-    endResultWin(GAME) {
+    endResultMsg(GAME, message) {
         this.roundResultDiv.textContent = ""
         this.currentScoreDiv.textContent = "";
-        this.endResultDiv.textContent = `You won! You got ${GAME.playerPoints} points. The computer got ${GAME.computerPoints} points`;
-    }
-
-    endResultTie(GAME) {
-        this.roundResultDiv.textContent = ""
-        this.currentScoreDiv.textContent = "";
-        this.endResultDiv.textContent = `It's a tie! You got ${GAME.playerPoints} points. The computer got ${GAME.computerPoints} points. Time for a rematch?`;
-    }
-
-    endResultLose(GAME) {
-        this.roundResultDiv.textContent = ""
-        this.currentScoreDiv.textContent = "";
-        this.endResultDiv.textContent = `You lost! You got ${GAME.playerPoints} points. The computer got ${GAME.computerPoints} points. Try again!`;
+        this.endResultDiv.textContent = message
     }
 }
 
