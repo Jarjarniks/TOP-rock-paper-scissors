@@ -41,36 +41,36 @@ function playRound(event) {
         case "rock":
             if (computerSelection === "scissor") {
                 playerPoints = playerWin(playerPoints);
-                resultMessenger.updateRoundResult(resultMessenger.roundWinMsg(playerSelection, computerSelection));
+                (resultMessenger.roundWinMsg(playerSelection, computerSelection));
             } else if (computerSelection === "rock") {
-                resultMessenger.updateRoundResult(resultMessenger.roundTieMsg(playerSelection, computerSelection));
+                (resultMessenger.roundTieMsg(playerSelection, computerSelection));
             } else {
                 computerPoints = computerWin(computerPoints);
-                resultMessenger.updateRoundResult(resultMessenger.roundLoseMsg(playerSelection, computerSelection));
+                (resultMessenger.roundLoseMsg(playerSelection, computerSelection));
             }
             break;
 
         case "paper":
             if (computerSelection === "rock") {
                 playerPoints = playerWin(playerPoints)
-                resultMessenger.updateRoundResult(resultMessenger.roundWinMsg(playerSelection, computerSelection));
+                (resultMessenger.roundWinMsg(playerSelection, computerSelection));
             } else if (computerSelection === "paper") {
-                resultMessenger.updateRoundResult(resultMessenger.roundTieMsg(playerSelection, computerSelection));
+                (resultMessenger.roundTieMsg(playerSelection, computerSelection));
             } else {
                 computerPoints = computerWin(computerPoints)
-                resultMessenger.updateRoundResult(resultMessenger.roundLoseMsg(playerSelection, computerSelection));
+                (resultMessenger.roundLoseMsg(playerSelection, computerSelection));
             }
             break;
 
         case "scissor":
             if (computerSelection === "paper") {
                 playerPoints = playerWin(playerPoints)
-                resultMessenger.updateRoundResult(resultMessenger.roundWinMsg(playerSelection, computerSelection));
+                (resultMessenger.roundWinMsg(playerSelection, computerSelection));
             } else if (computerSelection === "scissor") {
-                resultMessenger.updateRoundResult(resultMessenger.roundTieMsg(playerSelection, computerSelection));
+                (resultMessenger.roundTieMsg(playerSelection, computerSelection));
             } else {
                 computerPoints = computerWin(computerPoints)
-                resultMessenger.updateRoundResult(resultMessenger.roundLoseMsg(playerSelection, computerSelection));
+                (resultMessenger.roundLoseMsg(playerSelection, computerSelection));
             }
             break;
     }
