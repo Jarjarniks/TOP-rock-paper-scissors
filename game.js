@@ -24,12 +24,16 @@ class game {
     }
 
     endGame(resultMessenger) {
+        let message;
         if (this.playerPoints > this.computerPoints) {
-            resultMessenger.endResultWin(this)
+            message = `You won! You got ${this.playerPoints} points. The computer got ${this.computerPoints} points`;
+            resultMessenger.endResultMsg(this, message)
         } else if (this.playerPoints === this.computerPoints) {
-            resultMessenger.endResultTie(this)
+            message = `It's a tie! You got ${this.playerPoints} points. The computer got ${this.computerPoints} points. Time for a rematch?`;
+            resultMessenger.endResultMsg(this, message)
         } else {
-            resultMessenger.endResultLose(this)
+            message = `You lost! You got ${this.playerPoints} points. The computer got ${this.computerPoints} points`;
+            resultMessenger.endResultMsg(this, message)
         }
     }
 }
