@@ -7,7 +7,7 @@ class resultMsg {
 
     roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints) {
         let message;
-        
+
         if (playerPoints > computerPoints) {
             message = `Player wins! player chose ${playerSelection}, computer chose ${computerSelection}`
         } else if (playerPoints === computerPoints) {
@@ -26,8 +26,8 @@ class resultMsg {
     }
 
     endResultMsg(GAME, message) {
-        this.currentScoreDiv.textContent = "";
-        this.endResultDiv.textContent = message
+        GAME.currentScoreDiv.textContent = "";
+        GAME.endResultDiv.textContent = message
     }
 }
 
