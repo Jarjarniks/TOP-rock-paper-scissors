@@ -29,6 +29,8 @@ class game {
         btn.id = 'resetGame'
         btn.addEventListener('click', this.startGame);
         
+        const main = document.querySelector('main');
+        main.appendChild(btn);
     }
 
     endGame(resultMessenger) {
