@@ -26,6 +26,8 @@ class game {
     endGame(resultMessenger) {
         if (this.playerPoints > this.computerPoints) {
             resultMessenger.endResultWin(this)
+        } else if (this.playerPoints === this.computerPoints) {
+            resultMessenger.endResultTie(this)
         } else {
             resultMessenger.endResultLose(this)
         }
