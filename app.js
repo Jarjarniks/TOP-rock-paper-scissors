@@ -3,8 +3,6 @@ import game from './game.js';
 
 const choices = ["Rock", "Paper", "Scissor"];
 
-const main = document.querySelector('main');
-
 const rockBtn = document.querySelector('#rock');
 const paperBtn = document.querySelector('#paper');
 const scissorBtn = document.querySelector('#scissor');
