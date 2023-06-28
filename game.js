@@ -1,11 +1,12 @@
 class game {
-    constructor(gameType, resultMessenger) {
-        this.gameType = gameType
-        this.playerPoints;
-        this.computerPoints;
+    constructor(gameType, resultMessenger, context) {
+        this.gameType = gameType;
+        this.playerPoints = 0;
+        this.computerPoints = 0;
         this.roundsPlayed = 0;
         this.startGameBtn;
-        this.resultMessenger = resultMessenger
+        this.resultMessenger = resultMessenger;
+        this.context = context;
     }
 
     startGame() {
