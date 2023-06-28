@@ -3,17 +3,18 @@ import game from './game.js';
 
 const choices = ["Rock", "Paper", "Scissor"];
 
-const rockBtn = document.querySelector('#rock');
-const paperBtn = document.querySelector('#paper');
-const scissorBtn = document.querySelector('#scissor');
+const context = {
+    rockBtn: document.querySelector('#rock'),
+    paperBtn: document.querySelector('#paper'),
+    scissorBtn: document.querySelector('#scissor'),
+    roundResultDiv: document.querySelector('#roundResult'),
+    currentScoreDiv: document.querySelector('#currentScore'),
+    endResultDiv: document.querySelector('#endResult')
+}
 
-const roundResultDiv = document.querySelector('#roundResult');
-const currentScoreDiv = document.querySelector('#currentScore');
-const endResultDiv = document.querySelector('#endResult');
-
-rockBtn.addEventListener('click', playRound);
-paperBtn.addEventListener('click', playRound);
-scissorBtn.addEventListener('click', playRound);
+context.rockBtn.addEventListener('click', playRound);
+context.paperBtn.addEventListener('click', playRound);
+context.scissorBtn.addEventListener('click', playRound);
 
 
 function getComputerChoice() {
@@ -88,7 +89,7 @@ function playRound(event) {
     console.log(GAME)
 }
 
-const resultMessenger = new resultMsg(roundResultDiv, currentScoreDiv, endResultDiv);
+const resultMessenger = new resultMsg(context);
 const GAME = new game('RPS', resultMessenger);
 
 GAME.startGame();
