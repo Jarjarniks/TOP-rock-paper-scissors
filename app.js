@@ -41,36 +41,36 @@ function playRound(event) {
         case "rock":
             if (computerSelection === "scissor") {
                 playerPoints = playerWin(playerPoints);
-                (resultMessenger.roundWinMsg(playerSelection, computerSelection));
+                resultMessenger.roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints);
             } else if (computerSelection === "rock") {
-                (resultMessenger.roundTieMsg(playerSelection, computerSelection));
+                resultMessenger.roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints);
             } else {
                 computerPoints = computerWin(computerPoints);
-                (resultMessenger.roundLoseMsg(playerSelection, computerSelection));
+                resultMessenger.roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints);
             }
             break;
 
         case "paper":
             if (computerSelection === "rock") {
                 playerPoints = playerWin(playerPoints)
-                (resultMessenger.roundWinMsg(playerSelection, computerSelection));
+                resultMessenger.roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints);
             } else if (computerSelection === "paper") {
-                (resultMessenger.roundTieMsg(playerSelection, computerSelection));
+                resultMessenger.roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints);
             } else {
                 computerPoints = computerWin(computerPoints)
-                (resultMessenger.roundLoseMsg(playerSelection, computerSelection));
+                resultMessenger.roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints);
             }
             break;
 
         case "scissor":
             if (computerSelection === "paper") {
                 playerPoints = playerWin(playerPoints)
-                (resultMessenger.roundWinMsg(playerSelection, computerSelection));
+                resultMessenger.roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints);
             } else if (computerSelection === "scissor") {
-                (resultMessenger.roundTieMsg(playerSelection, computerSelection));
+                resultMessenger.roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints);
             } else {
                 computerPoints = computerWin(computerPoints)
-                (resultMessenger.roundLoseMsg(playerSelection, computerSelection));
+                resultMessenger.roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints);
             }
             break;
     }
