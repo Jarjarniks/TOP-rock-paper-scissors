@@ -11,3 +11,15 @@ body {
     overflow: hidden;
     white-space: nowrap;
 }
+
+.fade-in::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    animation: reveal 5 linear forwards;
+    z-index: 2;
+}
