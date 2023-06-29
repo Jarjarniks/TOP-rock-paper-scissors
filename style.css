@@ -5,6 +5,7 @@
 body {
     margin: 0;
     text-align: center;
+    background: linear-gradient(to right, #b3ff00ac, #00c800);
 }
 
 .left-align {
