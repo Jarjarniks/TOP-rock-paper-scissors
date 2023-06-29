@@ -9,7 +9,6 @@ body {
 .fade-in {
     position: relative;
     overflow: hidden;
-    white-space: nowrap;
 }
 
 .fade-in::after {
@@ -22,7 +21,7 @@ body {
     background-color: white;
     animation: reveal 5s linear forwards;
     z-index: 2;
-}
+} 
 
 @keyframes reveal {
     0% {
