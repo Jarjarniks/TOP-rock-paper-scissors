@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+.center-text {
+    text-align: center;
+}
+
 .fade-in {
     animation: fadeIn 5s;
 }
