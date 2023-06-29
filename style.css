@@ -7,10 +7,10 @@ body {
 }
 
 .fade-in {
-    animation: reveal 5s;
+    animation: fadeIn 5s;
 }
 
-@keyframes reveal {
+@keyframes fadeIn {
     0% {
         opacity: 0;
     }
