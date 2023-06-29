@@ -6,6 +6,8 @@ body {
     margin: 0;
 }
 
-.fade-in::before {
-    
+.fade-in {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
 }
