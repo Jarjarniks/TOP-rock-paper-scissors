@@ -4,11 +4,20 @@
 
 body {
     margin: 0;
-}
-
-.center-text {
     text-align: center;
 }
+
+.left-align {
+    text-align: left; /* Override for left alignment */
+  }
+  
+.right-align {
+    text-align: right; /* Override for right alignment */
+  }
+  
+.center-align {
+    text-align: center; /* Override for center alignment */
+  }
 
 .fade-in {
     animation: fadeIn 5s;
