@@ -8,15 +8,15 @@ body {
 }
 
 .left-align {
-    text-align: left; /* Override for left alignment */
+    text-align: left;
   }
   
 .right-align {
-    text-align: right; /* Override for right alignment */
+    text-align: right;
   }
   
 .center-align {
-    text-align: center; /* Override for center alignment */
+    text-align: center;
   }
 
 .fade-in {
