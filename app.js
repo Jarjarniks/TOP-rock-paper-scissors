@@ -79,12 +79,10 @@ function playRound(event) {
     GAME.updatePoints({playerPoints, computerPoints});
     resultMessenger.updateCurrentScore(GAME);
 
-    if (GAME.roundsPlayed === 5) {
+    if (GAME.playerPoints === 5 || GAME.computerPoints === 5) {
         GAME.disableButtons(context.rockBtn, context.paperBtn, context.scissorBtn)
 
         GAME.endGame(resultMessenger);
-
-        //make endGame add a button to restart
     }
     console.log(GAME)
 }
