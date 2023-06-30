@@ -41,7 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(219, 219, 121);
-    border-radius: 1rem;
+    border-radius: 0px 0px 20px 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     padding-bottom: 2rem;
 }
