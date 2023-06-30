@@ -13,9 +13,9 @@ const context = {
     endResultDiv: document.querySelector('#endResult')
 }
 
-const textElementsToReveal = {
-    flavorText1: document.querySelector('#flavorText-1')
-}
+
+const flavorText1 = document.querySelector('#flavorText-1')
+
 
 context.rockBtn.addEventListener('click', playRound);
 context.paperBtn.addEventListener('click', playRound);
@@ -100,7 +100,7 @@ function playRound(event) {
 // ---------------------------APP----------------------------
 
 const flavor1 = revealTxt.createArrayOfLetters(textElementsToReveal.flavorText1)
-
+textElementsToReveal.flavorText1.appendChild(revealTxt.createSpans(flavor1))
 
 console.log(GAME)
 console.log(resultMessenger)
