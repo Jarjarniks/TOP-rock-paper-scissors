@@ -101,26 +101,21 @@ function playRound(event) {
 
 // ---------------------------APP----------------------------
 
-function flavorText() {
-    
-    
-    
-    /* const flavor1ArrayTxt = revealTxt.createArrayOfLetters(flavorText1)
+const flavor1ArrayTxt = revealTxt.createArrayOfLetters(flavorText1)
+setTimeout(() => {
+    revealTxt.appendElements(flavor1ArrayTxt, flavorText1, revealTxt.createSpans, 80)
+}, 3000)
 
-    const promise = new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(revealTxt.appendElements(flavor1ArrayTxt, flavorText1, revealTxt.createSpans, 80));
-        }, 3000)
-    })
-    
-    promise
-        .then(() => {
-            const flavor2ArrayTxt = revealTxt.createArrayOfLetters(flavorText2)
-            return revealTxt.appendElements(flavor2ArrayTxt, flavorText2, revealTxt.createSpans, 80)
-        }) */
-}
+const flavor2ArrayTxt = revealTxt.createArrayOfLetters(flavorText2)
+setTimeout(() => {
+    revealTxt.appendElements(flavor2ArrayTxt, flavorText2, revealTxt.createSpans, 80)
+}, 6000)
 
-flavorText();
+const flavor3ArrayTxt = revealTxt.createArrayOfLetters(flavorText3)
+setTimeout(() => {
+    revealTxt.appendElements(flavor3ArrayTxt, flavorText3, revealTxt.createSpans, 80)
+}, 16000)
+
 
 console.log(GAME)
 console.log(resultMessenger)
