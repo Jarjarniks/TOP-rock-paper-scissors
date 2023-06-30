@@ -46,6 +46,10 @@ body {
     padding: 0rem 1rem 2rem;
 }
 
+.game-wrapper {
+    
+}
+
 .rps-buttons {
     display: flex;
     flex-flow: column nowrap;
@@ -54,5 +58,4 @@ body {
 
 .btn-card {
     background-color: red;
-    height: 80px;
 }
