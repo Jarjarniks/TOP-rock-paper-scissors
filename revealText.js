@@ -21,7 +21,6 @@ class revealText {
         const elementsArr = fn(arrayTxt)
         elementsArr.forEach((element, index) => {
             setTimeout(() => {
-                console.log(element, index)
                 elementToAppendTo.appendChild(element)
             }, delay * index )
         })

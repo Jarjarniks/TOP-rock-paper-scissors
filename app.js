@@ -104,6 +104,7 @@ function playRound(event) {
 //immediately executed anonymous function below
 (() => {
 
+    console.log('i ran')
 })();
 
 const flavor1ArrayTxt = revealTxt.createArrayOfLetters(flavorText1)
