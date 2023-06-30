@@ -14,6 +14,10 @@ const context = {
     endResultDiv: document.querySelector('#endResult')
 }
 
+const textElementsToReveal = {
+    flavorText1: document.querySelector('#flavorText-1')
+}
+
 context.rockBtn.addEventListener('click', playRound);
 context.paperBtn.addEventListener('click', playRound);
 context.scissorBtn.addEventListener('click', playRound);
@@ -91,7 +95,7 @@ function playRound(event) {
 
 const resultMessenger = new resultMsg(context);
 const GAME = new game('RPS', resultMessenger, context);
-const revealText = new revealText()
+const revealText = new revealText(textElementsToReveal)
 
 console.log(GAME)
 console.log(resultMessenger)
