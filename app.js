@@ -101,11 +101,9 @@ function playRound(event) {
 
 // ---------------------------APP----------------------------
 
-//immediately executed anonymous function below
-(() => {
-
-    console.log('i ran')
-})();
+function flavorText() {
+    
+}
 
 const flavor1ArrayTxt = revealTxt.createArrayOfLetters(flavorText1)
 setTimeout(() => {
@@ -113,9 +111,8 @@ setTimeout(() => {
 }, 3000)
 
 const flavor2ArrayTxt = revealTxt.createArrayOfLetters(flavorText2)
-setTimeout(() => {
-    revealTxt.appendElements(flavor2ArrayTxt, flavorText2, revealTxt.createSpans, 80)
-}, 6000)
+revealTxt.appendElements(flavor2ArrayTxt, flavorText2, revealTxt.createSpans, 80)
+
 
 console.log(GAME)
 console.log(resultMessenger)
