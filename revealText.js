@@ -2,19 +2,18 @@ class revealText {
     constructor() {
     }
     
-    createSpans(arrayOfLetters) {
-        arrayOfLetters.forEach(letter => {
-            const span = document.createElement('span');
-            span.textContent = letter;
-            console.log(span)
-            return span
-        })
-    }
-    
     createArrayOfLetters(HTMLElement) {
         const flavorText = HTMLElement.dataset.flavorText
         const arrayOfLetters = flavorText.split('')
         return arrayOfLetters
+    }
+
+    createSpans(arrayOfLetters) {
+        arrayOfLetters.forEach(letter => {
+            const span = document.createElement('span');
+            span.textContent = letter;
+            return span
+        })
     }
 
     appendSpans(elementToAppendTo, fn) {

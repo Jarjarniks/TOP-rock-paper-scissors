@@ -100,7 +100,7 @@ function playRound(event) {
 // ---------------------------APP----------------------------
 
 const flavor1ArrayTxt = revealTxt.createArrayOfLetters(flavorText1)
-flavorText1.appendChild(revealTxt.createSpans(flavor1ArrayTxt))
+revealTxt.appendSpans(flavor1ArrayTxt, revealTxt.createSpans(flavor1ArrayTxt))
 
 console.log(GAME)
 console.log(resultMessenger)
