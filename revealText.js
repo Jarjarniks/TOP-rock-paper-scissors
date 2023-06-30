@@ -17,10 +17,12 @@ class revealText {
         return spans   
     }
 
-    appendElements(arrayTxt, elementToAppendTo, fn) {
+    appendElements(arrayTxt, elementToAppendTo, fn, delay) {
         const elementsArr = fn(arrayTxt)
-        elementsArr.forEach(element => {
-            elementToAppendTo.appendChild(element)
+        elementsArr.forEach((element, index) => {
+            setTimeout(() => {
+                elementToAppendTo.appendChild(element)
+            }, delay * (index + 1))
         })
     }
 };
