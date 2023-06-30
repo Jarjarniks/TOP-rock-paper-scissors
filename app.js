@@ -123,9 +123,9 @@ const buttons = document.querySelectorAll('button')
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         buttons.forEach(button => {
-            button.classList.remove('clicked')
+            button.classList.remove('active-btn')
         })
-        button.classList.add('clicked')
+        button.classList.add('active-btn')
     })
 })
 
