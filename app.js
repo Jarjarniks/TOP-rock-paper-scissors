@@ -23,7 +23,7 @@ context.scissorBtn.addEventListener('click', playRound);
 
 const resultMessenger = new resultMsg(context);
 const GAME = new game('RPS', resultMessenger, context);
-const revealTxt = new revealText(textElementsToReveal)
+const revealTxt = new revealText()
 
 // ---------------------------GAME----------------------------
 
@@ -98,6 +98,8 @@ function playRound(event) {
 }
 
 // ---------------------------APP----------------------------
+
+revealTxt.createArrayOfLetters(textElementsToReveal)
 
 console.log(GAME)
 console.log(resultMessenger)

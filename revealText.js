@@ -1,6 +1,5 @@
 class revealText {
-    constructor(textElementsToReveal) {
-        this.textElementsToReveal = textElementsToReveal
+    constructor() {
     }
     
     createSpans(arrayOfLetters) {
