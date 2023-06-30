@@ -1,7 +1,6 @@
 import resultMsg from './resultMessage.js';
 import game from './game.js';
 import revealText from './revealText.js';
-import revealText from './revealText.js';
 
 const choices = ["Rock", "Paper", "Scissor"];
 
@@ -21,6 +20,10 @@ const textElementsToReveal = {
 context.rockBtn.addEventListener('click', playRound);
 context.paperBtn.addEventListener('click', playRound);
 context.scissorBtn.addEventListener('click', playRound);
+
+const resultMessenger = new resultMsg(context);
+const GAME = new game('RPS', resultMessenger, context);
+const revealTxt = new revealText(textElementsToReveal)
 
 // ---------------------------GAME----------------------------
 
@@ -95,12 +98,6 @@ function playRound(event) {
 }
 
 // ---------------------------APP----------------------------
-
-
-
-const resultMessenger = new resultMsg(context);
-const GAME = new game('RPS', resultMessenger, context);
-const revealTxt = new revealText(textElementsToReveal)
 
 console.log(GAME)
 console.log(resultMessenger)
