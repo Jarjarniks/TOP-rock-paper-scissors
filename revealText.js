@@ -18,6 +18,10 @@ class revealText {
         const arrayOfLetters = flavorText.split('')
         return arrayOfLetters
     }
+
+    appendSpans() {
+        
+    }
 };
 
 export default revealText
