@@ -48,20 +48,21 @@ body {
 }
 
 .game-wrapper {
-
+    margin-bottom: 1rem;
 }
 
 .rps-buttons {
     display: flex;
-    flex-flow: column nowrap;
-    gap: 16px
+    flex-flow: column;
+    gap: 16px;
+    /*align-items: stretch;*/
 }
-
+  
 .btn-card {
     background-color: red;
-}
+    /* flex-grow: 1; */
+}  
 
-img {
-    height: 50px;
-    width: 50px;
+.btn-card img {
+    height: 70px;
 }
