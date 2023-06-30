@@ -106,6 +106,11 @@ setTimeout(() => {
     revealTxt.appendElements(flavor1ArrayTxt, flavorText1, revealTxt.createSpans, 80)
 }, 3000)
 
+const flavor2ArrayTxt = revealTxt.createArrayOfLetters(flavorText2)
+setTimeout(() => {
+    revealTxt.appendElements(flavor2ArrayTxt, flavorText2, revealTxt.createSpans, 80)
+}, 6000)
+
 console.log(GAME)
 console.log(resultMessenger)
 GAME.startGame();
