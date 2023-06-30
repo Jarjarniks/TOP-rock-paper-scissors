@@ -70,15 +70,6 @@ body {
     /* flex-grow: 1; */
 }  
 
-.btn-card button {
-    opacity: 0.3;
-    transition: ease-in 0.1s;
-}
-
-.btn-card button:hover {
-    opacity: 1;
-}
-
 .btn-card img {
     height: 70px;
 }
