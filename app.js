@@ -101,6 +101,11 @@ function playRound(event) {
 
 // ---------------------------APP----------------------------
 
+//immediately executed anonymous function below
+(() => {
+
+})();
+
 const flavor1ArrayTxt = revealTxt.createArrayOfLetters(flavorText1)
 setTimeout(() => {
     revealTxt.appendElements(flavor1ArrayTxt, flavorText1, revealTxt.createSpans, 80)
