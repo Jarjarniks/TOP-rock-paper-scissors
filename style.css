@@ -55,7 +55,7 @@ body {
     display: flex;
     flex-flow: column;
     gap: 16px;
-    /*align-items: stretch;*/
+    align-items: center;
 }
 
 .game-feedback {
@@ -66,13 +66,13 @@ body {
 }
   
 .btn-card {
-    background-color: red;
+    background-color: rgb(155, 132, 0);
     /* flex-grow: 1; */
 }  
 
 .btn-card button {
-    opacity: 0;
-    transition: ease-in 0.3s;
+    opacity: 0.3;
+    transition: ease-in 0.1s;
 }
 
 .btn-card button:hover {
