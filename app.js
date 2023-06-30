@@ -99,7 +99,7 @@ function playRound(event) {
 
 // ---------------------------APP----------------------------
 
-revealTxt.createArrayOfLetters(textElementsToReveal)
+revealTxt.createArrayOfLetters(textElementsToReveal.flavorText1)
 
 console.log(GAME)
 console.log(resultMessenger)

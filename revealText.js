@@ -7,7 +7,7 @@ class revealText {
     }
     
     createArrayOfLetters(HTMLElement) {
-        const flavorText = HTMLElement.dataset.flavor-text
+        const flavorText = HTMLElement.dataset.flavorText
         const arrayOfLetters = flavorText.split('')
         return arrayOfLetters
     }
