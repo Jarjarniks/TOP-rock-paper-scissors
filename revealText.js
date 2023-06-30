@@ -23,7 +23,7 @@ class revealText {
             setTimeout(() => {
                 console.log(element, index)
                 elementToAppendTo.appendChild(element)
-            }, delay * (index + 1))
+            }, delay * index )
         })
     }
 };
