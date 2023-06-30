@@ -102,16 +102,16 @@ function playRound(event) {
 // ---------------------------APP----------------------------
 
 function flavorText() {
+    const flavor1ArrayTxt = revealTxt.createArrayOfLetters(flavorText1)
+    setTimeout(() => {
+        revealTxt.appendElements(flavor1ArrayTxt, flavorText1, revealTxt.createSpans, 80)
+    }, 3000)
     
+    const flavor2ArrayTxt = revealTxt.createArrayOfLetters(flavorText2)
+    revealTxt.appendElements(flavor2ArrayTxt, flavorText2, revealTxt.createSpans, 80)
 }
 
-const flavor1ArrayTxt = revealTxt.createArrayOfLetters(flavorText1)
-setTimeout(() => {
-    revealTxt.appendElements(flavor1ArrayTxt, flavorText1, revealTxt.createSpans, 80)
-}, 3000)
 
-const flavor2ArrayTxt = revealTxt.createArrayOfLetters(flavorText2)
-revealTxt.appendElements(flavor2ArrayTxt, flavorText2, revealTxt.createSpans, 80)
 
 
 console.log(GAME)
