@@ -1,5 +1,7 @@
 import resultMsg from './resultMessage.js';
 import game from './game.js';
+import revealText from './revealText.js';
+import revealText from './revealText.js';
 
 const choices = ["Rock", "Paper", "Scissor"];
 
@@ -89,6 +91,8 @@ function playRound(event) {
 
 const resultMessenger = new resultMsg(context);
 const GAME = new game('RPS', resultMessenger, context);
+const revealText = new revealText()
+
 console.log(GAME)
 console.log(resultMessenger)
 GAME.startGame();

@@ -14,3 +14,4 @@ class revealText {
     }
 };
 
+export default revealText
