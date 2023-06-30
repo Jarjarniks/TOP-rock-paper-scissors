@@ -9,17 +9,18 @@ class revealText {
     }
 
     createSpans(arrayOfLetters) {
-        arrayOfLetters.forEach(letter => {
+        const spans = arrayOfLetters.map(letter => {
             const span = document.createElement('span');
             span.textContent = letter;
             return span
         })
+        return spans   
     }
 
-    appendSpans(elementToAppendTo, arrayTxt, fn) {
-        const length = arrayTxt.length
-
-
+    appendSpans(arrayTxt, elementToAppendTo, fn) {
+        arrayTxt.forEach(() => {
+            elementToAppendTo.appendChild(fn)
+        })
     }
 };
 
