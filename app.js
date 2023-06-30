@@ -15,6 +15,8 @@ const context = {
 
 
 const flavorText1 = document.querySelector('#flavorText-1')
+const flavorText2 = document.querySelector('#flavorText-2')
+const flavorText3 = document.querySelector('#flavorText-3')
 
 
 context.rockBtn.addEventListener('click', playRound);
