@@ -43,8 +43,8 @@ class game {
         btn.id = 'startGame'
         btn.addEventListener('click', this.startGame.bind(this));
         
-        const main = document.querySelector('main');
-        main.appendChild(btn);
+        const gameFeedback = document.querySelector('.game-feedback');
+        gameFeedback.appendChild(btn);
 
         this.startGameBtn = btn
     }
