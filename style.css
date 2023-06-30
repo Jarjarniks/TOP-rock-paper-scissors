@@ -57,11 +57,24 @@ body {
     gap: 16px;
     /*align-items: stretch;*/
 }
+
+.game-feedback {
+    display: flex;
+}
   
 .btn-card {
     background-color: red;
     /* flex-grow: 1; */
 }  
+
+.btn-card button {
+    opacity: 0;
+    transition: ease-in 0.3s;
+}
+
+.btn-card button:hover {
+    opacity: 1;
+}
 
 .btn-card img {
     height: 70px;
