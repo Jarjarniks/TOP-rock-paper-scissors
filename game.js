@@ -15,8 +15,8 @@ class game {
         this.roundsPlayed = 0;
 
         if (this.startGameBtn) {
-            const main = document.querySelector('main');
-            main.removeChild(this.startGameBtn)
+            const gameFeedback = document.querySelector('.game-feedback');
+            gameFeedback.removeChild(this.startGameBtn)
         }
 
         this.resultMessenger.startGameReset()
