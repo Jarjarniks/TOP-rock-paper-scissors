@@ -117,6 +117,15 @@ setTimeout(() => {
 }, 0)
     //16000
 
+// -------------------------Buttons------------------------
+
+const buttons = document.querySelectorAll('button')
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        button.classList.add('clicked')
+    })
+})
+
 console.log(GAME)
 console.log(resultMessenger)
 GAME.startGame();
