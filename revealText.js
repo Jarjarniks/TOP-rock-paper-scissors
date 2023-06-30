@@ -12,15 +12,15 @@ class revealText {
         const spans = arrayOfLetters.map(letter => {
             const span = document.createElement('span');
             span.textContent = letter;
+            console.log(span)
             return span
         })
+        console.log(spans)
         return spans   
     }
 
     appendSpans(arrayTxt, elementToAppendTo, fn) {
-        arrayTxt.forEach(() => {
-            elementToAppendTo.appendChild(fn)
-        })
+        
     }
 };
 
