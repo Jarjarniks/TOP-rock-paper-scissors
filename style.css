@@ -50,3 +50,8 @@ body {
     align-self: center;
     margin-bottom: 1rem;
 }
+
+.btn-card {
+    background-color: red;
+    margin: 20px;
+}
