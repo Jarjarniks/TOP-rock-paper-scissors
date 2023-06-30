@@ -16,8 +16,10 @@ class revealText {
         })
     }
 
-    appendSpans(elementToAppendTo, fn) {
-        
+    appendSpans(elementToAppendTo, arrayTxt, fn) {
+        const length = arrayTxt.length
+
+
     }
 };
 
