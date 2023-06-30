@@ -17,10 +17,10 @@ class revealText {
         return spans   
     }
 
-    appendSpans(arrayTxt, elementToAppendTo, fn) {
-        const spans = fn(arrayTxt)
-        spans.forEach(span => {
-            elementToAppendTo.appendChild(span)
+    appendElements(arrayTxt, elementToAppendTo, fn) {
+        const elementsArr = fn(arrayTxt)
+        elementsArr.forEach(element => {
+            elementToAppendTo.appendChild(element)
         })
     }
 };
