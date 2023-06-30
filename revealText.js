@@ -3,7 +3,12 @@ class revealText {
     }
     
     createSpans(arrayOfLetters) {
-
+        arrayOfLetters.forEach(letter => {
+            const span = document.createElement('span');
+            span.textContent = letter;
+            console.log(span)
+            return span
+        })
     }
     
     createArrayOfLetters(HTMLElement) {
