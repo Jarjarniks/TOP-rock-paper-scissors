@@ -22,6 +22,7 @@ context.rockBtn.addEventListener('click', playRound);
 context.paperBtn.addEventListener('click', playRound);
 context.scissorBtn.addEventListener('click', playRound);
 
+// ---------------------------GAME----------------------------
 
 function getComputerChoice() {
     const number = Math.floor(Math.random() * choices.length);
@@ -93,9 +94,13 @@ function playRound(event) {
     console.log(GAME)
 }
 
+// ---------------------------APP----------------------------
+
+
+
 const resultMessenger = new resultMsg(context);
 const GAME = new game('RPS', resultMessenger, context);
-const revealText = new revealText(textElementsToReveal)
+const revealTxt = new revealText(textElementsToReveal)
 
 console.log(GAME)
 console.log(resultMessenger)
