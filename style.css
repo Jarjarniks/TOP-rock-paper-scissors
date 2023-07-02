@@ -87,6 +87,11 @@ body {
     right: -100px;
     top: 50%;
     transform: translateY(-50%);
+    transition: right 1s ease-out;
+}
+
+.btn-card:hover > button {
+    right: 0;
 }
 
 .btn-card img {
