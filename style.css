@@ -78,7 +78,7 @@ body {
     position: relative;
     width: 100%;
     height: 200px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }  
 
 .btn-card button {
@@ -91,7 +91,7 @@ body {
 }
 
 .btn-card:hover > button {
-    right: 0;
+    right: 20%;
 }
 
 .btn-card img {
