@@ -29,20 +29,11 @@ body {
 @keyframes fadeIn {
     0% {
         opacity: 0;
+        pointer-events: none;
     }
     100% {
         opacity: 100%;
-    }
-}
-
-@keyframes fadeInLong {
-    0% {
-        opacity: 0;
-        pointer-events: none;
-    }
-    100% {
-        opacity: 0;
-        pointer-events: none;
+        pointer-events: all;
     }
 }
 
@@ -60,6 +51,10 @@ body {
 
 #game-wrapper {
     margin-bottom: 1rem;
+    animation-name: fadeInLong;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2.5s;
 }
 
 .rps-buttons {
