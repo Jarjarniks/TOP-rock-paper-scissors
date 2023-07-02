@@ -51,10 +51,12 @@ body {
 
 #game-wrapper {
     margin-bottom: 1rem;
-    animation-name: fadeInLong;
+    animation-name: fadeIn;
     animation-duration: 2s;
     animation-timing-function: linear;
-    animation-delay: 2.5s;
+    animation-delay: 21s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .rps-buttons {
