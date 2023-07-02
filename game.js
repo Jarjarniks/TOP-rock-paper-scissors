@@ -15,7 +15,7 @@ class game {
         this.roundsPlayed = 0;
 
         if (this.startGameBtn) {
-            const gameFeedback = document.querySelector('.game-feedback');
+            const gameFeedback = document.querySelector('#game-feedback');
             gameFeedback.removeChild(this.startGameBtn)
         }
 
@@ -46,7 +46,7 @@ class game {
         btn.id = 'startGame'
         btn.addEventListener('click', this.startGame.bind(this));
         
-        const gameFeedback = document.querySelector('.game-feedback');
+        const gameFeedback = document.querySelector('#game-feedback');
         gameFeedback.appendChild(btn);
 
         this.startGameBtn = btn

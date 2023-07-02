@@ -85,6 +85,8 @@ body {
     opacity: 0.5;
     position: absolute;
     right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .btn-card img {
