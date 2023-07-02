@@ -47,7 +47,7 @@ body {
     padding: 0rem 1rem 2rem;
 }
 
-.game-wrapper {
+#game-wrapper {
     margin-bottom: 1rem;
 }
 
@@ -58,7 +58,7 @@ body {
     align-items: center;
 }
 
-.game-feedback {
+#game-feedback {
     display: flex;
     flex-flow: column;
     align-items: center;
