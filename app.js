@@ -104,17 +104,17 @@ function playRound(event) {
 const flavor1ArrayTxt = revealTxt.createArrayOfLetters(flavorText1)
 setTimeout(() => {
     revealTxt.appendElements(flavor1ArrayTxt, flavorText1, revealTxt.createSpans, 80)
-}, 3000)
+}, 0)
     //3000
 const flavor2ArrayTxt = revealTxt.createArrayOfLetters(flavorText2)
 setTimeout(() => {
     revealTxt.appendElements(flavor2ArrayTxt, flavorText2, revealTxt.createSpans, 80)
-}, 6000)
+}, 0)
     //6000
 const flavor3ArrayTxt = revealTxt.createArrayOfLetters(flavorText3)
 setTimeout(() => {
     revealTxt.appendElements(flavor3ArrayTxt, flavorText3, revealTxt.createSpans, 80)
-}, 16000)
+}, 0)
     //16000
 
 // -------------------------Buttons------------------------
