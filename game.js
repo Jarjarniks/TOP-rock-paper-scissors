@@ -42,8 +42,8 @@ class game {
 
     createResetGameBtn() {
         const btn = document.createElement('button');
-        btn.textContent = 'Play again'
-        btn.id = 'startGame'
+        btn.textContent = 'Play Again'
+        btn.id = 'start-game'
         btn.addEventListener('click', this.startGame.bind(this));
         
         const gameFeedback = document.querySelector('#game-feedback');
