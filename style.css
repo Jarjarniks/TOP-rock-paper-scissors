@@ -57,9 +57,9 @@ body {
 #game-wrapper {
     margin-bottom: 1rem;
     animation-name: fadeIn;
-    animation-duration: 1s; /* 2s */
+    animation-duration: 2s; /* 2s */
     animation-timing-function: linear;
-    animation-delay: 1s; /* 21s */
+    animation-delay: 21s; /* 21s */
     animation-fill-mode: forwards;
     opacity: 0;
 }
