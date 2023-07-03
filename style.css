@@ -157,7 +157,10 @@ body {
 
 @media (min-width: 768px) {
     
-
+    .wrapper {
+        margin-top: 3rem;
+        padding: 1rem 2rem 3rem;
+    }
 
     #rps-cards {
         flex-flow: row;
