@@ -16,16 +16,16 @@ class game {
 
         if (this.startGameBtn) {
             const gameFeedback = document.querySelector('#game-feedback');
-            gameFeedback.removeChild(this.startGameBtn)
+            gameFeedback.removeChild(this.startGameBtn);
         }
 
-        this.resultMessenger.startGameReset()
-        this.context.rockBtn.disabled = false
-        this.context.rockBtn.removeAttribute("class")
-        this.context.paperBtn.disabled = false
-        this.context.paperBtn.removeAttribute("class")
-        this.context.scissorBtn.disabled = false
-        this.context.scissorBtn.removeAttribute("class")
+        this.resultMessenger.startGameReset();
+        this.context.rockBtn.disabled = false;
+        this.context.rockBtn.removeAttribute("class");
+        this.context.paperBtn.disabled = false;
+        this.context.paperBtn.removeAttribute("class");
+        this.context.scissorBtn.disabled = false;
+        this.context.scissorBtn.removeAttribute("class");
     }
 
     updatePoints(resultObj) {
@@ -42,14 +42,14 @@ class game {
 
     createResetGameBtn() {
         const btn = document.createElement('button');
-        btn.textContent = 'Play Again'
-        btn.id = 'start-game'
+        btn.textContent = 'Play Again';
+        btn.id = 'start-game';
         btn.addEventListener('click', this.startGame.bind(this));
         
         const gameFeedback = document.querySelector('#game-feedback');
         gameFeedback.appendChild(btn);
 
-        this.startGameBtn = btn
+        this.startGameBtn = btn;
     }
 
     endGame() {
