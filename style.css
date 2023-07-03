@@ -127,6 +127,11 @@ body {
     position: relative;
 }
 
+#start-game:hover {
+    color: white;
+    background-color: rgb(45, 57, 41);
+}
+
 #start-game::before,
 #start-game::after {
     position: absolute;
