@@ -122,4 +122,6 @@ body {
 #startGame {
     margin-top: 10px;
     font-size: 1rem;
+    padding: 4px 8px;
+    background-color: #a3f51f;
 }
