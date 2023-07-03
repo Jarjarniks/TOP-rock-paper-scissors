@@ -76,7 +76,7 @@ body {
 .choice-card {
     background-color: rgb(155, 132, 0);
     width: 100%;
-    height: 200px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,7 +101,7 @@ body {
 }
 
 .card-btn img {
-    height: 70px;
+    height: 60px;
 }
 
 .active-btn {
