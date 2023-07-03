@@ -124,4 +124,12 @@ body {
     font-size: 1rem;
     padding: 4px 8px;
     background-color: #a3f51f;
+    position: relative;
+}
+
+#start-game::before,
+#start-game::after {
+    position: absolute;
+    content: "";
+    background-color: red;
 }
