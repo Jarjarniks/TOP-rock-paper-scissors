@@ -73,15 +73,15 @@ body {
     gap: 8px;
 }
   
-.card-btn {
+.choice-card {
     background-color: rgb(155, 132, 0);
     position: relative;
     width: 100%;
     height: 200px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }  
 
-.card-btn button {
+.card-btn {
     opacity: 0.5;
     position: absolute;
     right: -100px;
@@ -90,7 +90,7 @@ body {
     transition: right 1s ease-out;
 }
 
-.card-btn:hover > button {
+.choice-card:hover .card-btn {
     right: 20%;
 }
 
