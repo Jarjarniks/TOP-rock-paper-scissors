@@ -95,7 +95,7 @@ body {
 .card-btn button {
     opacity: 0.5;
     position: absolute;
-    right: -300px;
+    right: -150px;
     transform: translateY(-50%);
     transition: right 1s ease-out;
 }
