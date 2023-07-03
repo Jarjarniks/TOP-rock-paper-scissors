@@ -175,7 +175,12 @@ body {
 @media (min-width: 993px) {
     
     .choice-card {
+        height: 160px;
         padding: 30px;
+    }
+
+    .card-btn img {
+        height: 75px;
     }
 
 }
