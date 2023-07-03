@@ -137,6 +137,7 @@ body {
     position: absolute;
     content: "";
     background-color: rgb(187, 142, 27);
+    pointer-events: none;
 }
 
 #start-game::before {
