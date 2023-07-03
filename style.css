@@ -166,4 +166,16 @@ body {
         flex-flow: row;
         gap: 24px;
     }
+
+    .choice-card {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 993px) {
+    
+    .choice-card {
+        padding: 30px;
+    }
+
 }
