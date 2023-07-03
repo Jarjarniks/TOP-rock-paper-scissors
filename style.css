@@ -80,8 +80,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;   
-    /* overflow: hidden; */
+    padding: 30px;   
+    overflow: hidden;
 }  
 
 .choice-card:hover .card-btn button {
