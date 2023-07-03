@@ -21,8 +21,11 @@ class game {
 
         this.resultMessenger.startGameReset()
         this.context.rockBtn.disabled = false
+        this.context.rockBtn.removeAttribute("class")
         this.context.paperBtn.disabled = false
+        this.context.rockBtn.removeAttribute("class")
         this.context.scissorBtn.disabled = false
+        this.context.rockBtn.removeAttribute("class")
     }
 
     updatePoints(resultObj) {
