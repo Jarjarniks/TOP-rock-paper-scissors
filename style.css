@@ -154,3 +154,13 @@ body {
     right: -10px;
     height: calc(100% + 10px);
 }
+
+@media (min-width: 768px) {
+    
+
+
+    #rps-cards {
+        flex-flow: row;
+        gap: 24px;
+    }
+}
