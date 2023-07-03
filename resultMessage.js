@@ -5,11 +5,15 @@ class resultMsg {
 
     roundResultMsg(playerSelection, computerSelection, playerPoints, computerPoints) {
         let message;
+        this.context.roundResultDiv.removeAttribute("class")
 
         if (playerPoints > computerPoints) {
             message = `Player wins! player chose ${playerSelection}, the leprechaun chose ${computerSelection}.`
         } else if (playerPoints === computerPoints) {
             message = `It's a tie! player chose ${playerSelection}, the leprechaun chose ${computerSelection}.`
+            setTimeout(() => {
+                this.context.roundResultDiv.classList.add('tie')
+            }, 100)
         } else {
             message = `Player loses! player chose ${playerSelection}, the leprechaun chose ${computerSelection}.`
         }
