@@ -22,6 +22,10 @@ body {
     text-align: center;
   }
 
+.intro-text {
+    line-height: 2.2rem;
+}
+
 .fade-in {
     animation: fadeIn 5s;
 }
