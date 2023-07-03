@@ -59,7 +59,7 @@ body {
     opacity: 0;
 }
 
-#rps-card-buttons {
+#rps-cards {
     display: flex;
     flex-flow: column;
     gap: 16px;
