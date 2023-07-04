@@ -26,6 +26,8 @@ class game {
         this.context.paperBtn.removeAttribute("class");
         this.context.scissorBtn.disabled = false;
         this.context.scissorBtn.removeAttribute("class");
+
+        this.context.roundResultDiv.removeAttribute("class");
     }
 
     updatePoints(resultObj) {
