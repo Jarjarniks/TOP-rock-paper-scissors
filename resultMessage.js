@@ -9,6 +9,9 @@ class resultMsg {
 
         if (playerPoints > computerPoints) {
             message = `Player wins! player chose ${playerSelection}, the leprechaun chose ${computerSelection}.`
+            setTimeout(() => {
+                this.context.roundResultDiv.classList.add('win')
+            }, 100)
         } else if (playerPoints === computerPoints) {
             message = `It's a tie! player chose ${playerSelection}, the leprechaun chose ${computerSelection}.`
             setTimeout(() => {
@@ -16,6 +19,9 @@ class resultMsg {
             }, 100)
         } else {
             message = `Player loses! player chose ${playerSelection}, the leprechaun chose ${computerSelection}.`
+            setTimeout(() => {
+                this.context.roundResultDiv.classList.add('lose')
+            }, 100)
         }
         this.context.roundResultDiv.textContent = message
     }
