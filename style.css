@@ -61,7 +61,19 @@ body {
 }
 
 @keyframes turnGreen {
-    
+    0% {
+        opacity: 0;
+        color: white;
+        background-color: #00e300;
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        color: white;
+        background-color: #007c00;
+    }
 }
 
 @keyframes turnRed {
@@ -73,11 +85,11 @@ body {
 }
 
 .win {
-    animation: turnGreen 0.5 ease-in;
+    animation: turnGreen 0.5s ease-in forwards;
 }
 
 .lose {
-    animation: turnRed 0.5 ease-in;
+    animation: turnRed 0.5s ease-in;
 }
 
 .wrapper {
