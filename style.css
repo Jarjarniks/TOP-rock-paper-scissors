@@ -73,11 +73,11 @@ body {
 }
 
 .win {
-    animation: ;
+    animation: turnGreen 0.5 ease-in;
 }
 
 .lose {
-    animation: ;
+    animation: turnRed 0.5 ease-in;
 }
 
 .wrapper {
