@@ -73,11 +73,25 @@ body {
         opacity: 1;
         color: white;
         background-color: #007c00;
+        padding: 10px;
     }
 }
 
 @keyframes turnRed {
-    
+    0% {
+        opacity: 0;
+        color: white;
+        background-color: #e30000;
+    }
+    50% {
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        color: white;
+        background-color: #7c0000;
+        padding: 10px;
+    }
 }
 
 .tie {
@@ -85,11 +99,11 @@ body {
 }
 
 .win {
-    animation: turnGreen 0.5s ease-in forwards;
+    animation: turnGreen 0.7s ease-in forwards;
 }
 
 .lose {
-    animation: turnRed 0.5s ease-in;
+    animation: turnRed 0.7s ease-in forwards;
 }
 
 .wrapper {
