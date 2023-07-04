@@ -60,6 +60,14 @@ body {
       }
 }
 
+@keyframes turnGreen {
+    
+}
+
+@keyframes turnRed {
+    
+}
+
 .tie {
     animation: shake 0.5s ease-in-out;
 }
