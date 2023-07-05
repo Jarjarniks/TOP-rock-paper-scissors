@@ -160,7 +160,14 @@ button:hover {
     border-style: outset;
     border-radius: 0px 10px 10px 30px;
     border-color: rgb(107, 246, 207);
-}  
+    transition: border-width 0.5s,
+        border-style 2s;
+}
+
+.choice-card:hover {
+    border-width: 6px;
+    border-style: inset;
+}
 
 .choice-card:hover .card-btn button {
     right: 0%;
