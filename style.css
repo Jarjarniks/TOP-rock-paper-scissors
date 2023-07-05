@@ -202,14 +202,14 @@ button:hover {
 #start-game {
     margin-top: 10px;
     font-size: 1rem;
-    padding: 4px 8px;
-    background-color: #a3f51f;
+    padding: 4px 16px;
+    background-color: #92db1d;
     position: relative;
     transition: background-color 0.3s,
         color 0.3s,
         outline 0.15s;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 #start-game:hover {
