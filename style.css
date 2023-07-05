@@ -242,6 +242,10 @@ button:hover {
 
 @media (min-width: 768px) {
     
+    body {
+        font-size: 22px;
+    }
+
     .wrapper {
         margin-top: 3rem;
         padding: 1rem 2rem 3rem;
