@@ -6,8 +6,13 @@ body {
     margin: 0;
     text-align: center;
     background: linear-gradient(to right, #b3ff00ac, #00e300);
-    font-size: 18px;
+    font-size: 16px;
+    font-family: 'Shadows Into Light', Arial, Helvetica, sans-serif;
     height: 100vh;
+}
+
+button {
+    font-family: 'Shadows Into Light', Arial, Helvetica, sans-serif;
 }
 
 button:hover {
