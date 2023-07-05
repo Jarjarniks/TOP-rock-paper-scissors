@@ -190,6 +190,8 @@ body {
     padding: 4px 8px;
     background-color: #a3f51f;
     position: relative;
+    transition: background-color 0.3s,
+        color 0.3s;
 }
 
 #start-game:hover {
