@@ -156,17 +156,16 @@ button:hover {
     align-items: center;
     padding: 30px;   
     overflow: hidden;
-    border-width: 4px;
-    border-style: outset;
+    outline-width: 4px;
+    outline-style: outset;
     border-radius: 0px 10px 10px 30px;
-    border-color: rgb(107, 246, 207);
-    transition: border-width 0.5s,
-        border-style 2s;
+    outline-color: rgb(107, 246, 207);
+    transition: outline-width 0.5s;
 }
 
 .choice-card:hover {
-    border-width: 6px;
-    border-style: inset;
+    outline-width: 6px;
+    outline-style: inset;
 }
 
 .choice-card:hover .card-btn button {
