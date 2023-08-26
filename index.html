@@ -1,57 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <link href="style.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main class="wrapper">
-        <header>
-            <h1 class="fade-in intro-text">While you were on a relaxing walk in the woods...</h1>
-            <p id="flavorText-1" data-flavor-text="You stumble upon an irish leprechaun!"></p>
-            <p id="flavorText-2" data-flavor-text="He tells you that he will give you a pot of gold if you win in a game of rock paper scissors against him..."></p>
-            <p id="flavorText-3" data-flavor-text="But if you lose, you will have to wash his smelly feet for a month!"></p>
-        </header>
-        <div id="game-wrapper">
-            <div id="rps-cards">
-                <div class="choice-card">
-                    <div class="card-text">SMASH!</div>
-                    <div class="card-btn">
-                        <button id="rock">
-                            <img src="/imgs/rock.png" alt="rock">
-                        </button>
-                    </div>
-                </div>
-                <div class="choice-card">
-                    <div class="card-text">BIND!</div>
-                    <div class="card-btn">
-                        <button id="paper">
-                            <img src="/imgs/paper.png" alt="paper">
-                        </button>
-                    </div>
-                </div>
-                <div class="choice-card">
-                    <div class="card-text">SLICE!</div>
-                    <div class="card-btn">
-                        <button id="scissor">
-                            <img src="/imgs/scissor.png" alt="scissor">
-                        </button>
-                    </div>
-                </div>
+      <header>
+        <h1 class="fade-in intro-text">
+          While you were on a relaxing walk in the woods...
+        </h1>
+        <p
+          id="flavorText-1"
+          data-flavor-text="You stumble upon an irish leprechaun!"
+        ></p>
+        <p
+          id="flavorText-2"
+          data-flavor-text="He tells you that he will give you a pot of gold if you win in a game of rock paper scissors against him..."
+        ></p>
+        <p
+          id="flavorText-3"
+          data-flavor-text="But if you lose, you will have to wash his smelly feet for a month!"
+        ></p>
+      </header>
+      <div id="game-wrapper">
+        <div id="rps-cards">
+          <div class="choice-card">
+            <div class="card-text">SMASH!</div>
+            <div class="card-btn">
+              <button id="rock">
+                <img src="./imgs/rock.png" alt="rock" />
+              </button>
             </div>
+          </div>
+          <div class="choice-card">
+            <div class="card-text">BIND!</div>
+            <div class="card-btn">
+              <button id="paper">
+                <img src="./imgs/paper.png" alt="paper" />
+              </button>
+            </div>
+          </div>
+          <div class="choice-card">
+            <div class="card-text">SLICE!</div>
+            <div class="card-btn">
+              <button id="scissor">
+                <img src="./imgs/scissor.png" alt="scissor" />
+              </button>
+            </div>
+          </div>
         </div>
-        <div id="game-feedback">
-            <div id="roundResult"></div>
-            <div id="currentScore"></div>
-            <div id="endResult"></div>
-        </div>
+      </div>
+      <div id="game-feedback">
+        <div id="roundResult"></div>
+        <div id="currentScore"></div>
+        <div id="endResult"></div>
+      </div>
     </main>
     <script type="module" src="app.js"></script>
-</body>
+  </body>
 </html>
